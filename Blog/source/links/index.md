@@ -64,6 +64,11 @@ type: "links"
     avatar: https://cdn.jsdelivr.net/gh/mjcfx/picgo/img/qqtou.jpg
     descr: 星辰大海
     siteshot: https://cdn.jsdelivr.net/gh/mjcfx/picgo/img/xc.png
+- name: Ariasakaの小窝
+  link: https://blog.yaria.top
+  avatar: https://bu.dusays.com/2023/06/30/649e9ec88cf47.png
+  descr: 人有悲欢离合 月有阴晴圆缺
+  siteshot: https://vercel.yaria.top/img/siteshot.png
 
 {% endflink %}
 
