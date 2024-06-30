@@ -137,7 +137,7 @@ type: "links"
   link: https://anjiurine.top/
   avatar: https://img-r2.anjiurine.top/q78kg/avatar.webp
   descr: sleeeeep
-  siteshot: https://vercel.yisous.xyz/img/siteshot.png
+  siteshot: https://vercel.yaria.top/img/siteshot.png
 ```
 
 <!-- endtab -->
@@ -156,7 +156,7 @@ type: "links"
 - title: 梦溯·镜影
   avatar: https://img-r2.anjiurine.top/q78kg/avatar.webp
   url: https://anjiurine.top/
-  screenshot: https://yisous.xyz/img/siteshot.png
+  screenshot: https://vercel.yaria.top/img/siteshot.png
   keywords: 个人博客
   description: sleeeeep
 ```
