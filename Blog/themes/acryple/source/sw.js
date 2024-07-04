@@ -65,10 +65,10 @@ const lfetch = async (urls, url) => {
     }))
 }
 self.addEventListener('fetch', async event => {
-    try{
+    try {
         event.respondWith(handle(event.request))
-    }catch(err){
-        if(fullpath(urlPath).indexOf(".html")!=-1){
+    } catch (err) {
+        if (fullpath(urlPath).indexOf(".html") != -1) {
             event.respondWith(fetch("/404.html"))
         }
     }
@@ -106,9 +106,9 @@ const mirror = [
     `https://mirrors.cloud.tencent.com/npm/q78kgblog/latest`
 ]
 const get_newest_version = async (mirror) => {
-return lfetch(mirror, mirror[0])
-    .then(res => res.json())
-    .then(res.version)
+    return lfetch(mirror, mirror[0])
+        .then(res => res.json())
+        .then(res.version)
 }
 self.db = { //全局定义db,只要read和write,看不懂可以略过
     read: (key, config) => {
@@ -145,49 +145,49 @@ const set_newest_version = async (mirror) => { //改为最新版本写入数据�
         })
 }
 
-setInterval(async() => {
+setInterval(async () => {
     await set_newest_version(mirror) //定时更新,一分钟一次
-}, 60*1000);
+}, 60 * 1000);
 
-setTimeout(async() => {
+setTimeout(async () => {
     await set_newest_version(mirror)//打开五秒后更新,避免堵塞
-},5000)
+}, 5000)
 function getFileType(fileName) {
-    suffix=fileName.split('.')[fileName.split('.').length-1]
-    if(suffix=="html"||suffix=="htm") {
+    suffix = fileName.split('.')[fileName.split('.').length - 1]
+    if (suffix == "html" || suffix == "htm") {
         return 'text/html';
     }
-    if(suffix=="js") {
+    if (suffix == "js") {
         return 'text/javascript';
     }
-    if(suffix=="css") {
+    if (suffix == "css") {
         return 'text/css';
     }
-    if(suffix=="jpg"||suffix=="jpeg") {
+    if (suffix == "jpg" || suffix == "jpeg") {
         return 'image/jpeg';
     }
-    if(suffix=="ico") {
+    if (suffix == "ico") {
         return 'image/x-icon';
     }
-    if(suffix=="png") {
+    if (suffix == "png") {
         return 'image/png';
     }
     return 'text/plain';
-  }
-const handle = async(req)=>{
+}
+const handle = async (req) => {
     const urlStr = req.url
     const urlObj = new URL(urlStr);
     const urlPath = urlObj.pathname;
     const domain = urlObj.hostname;
     //从这里开始
-    lxs=[]
-    if(domain === "anjiurine.top"){//这里写你需要拦截的域名
-        var l=lfetch(generate_blog_urls('q78kgblog',await db.read('blog_version') || 'latest',fullpath(urlPath)))
+    lxs = []
+    if (domain === "anjiurine.top") {//这里写你需要拦截的域名
+        var l = lfetch(generate_blog_urls('q78kgblog', await db.read('blog_version') || 'latest', fullpath(urlPath)))
         return l
-        .then(res=>res.arrayBuffer())
-        .then(buffer=>new Response(buffer,{headers:{"Content-Type":`${getFileType(fullpath(urlPath).split("/")[fullpath(urlPath).split("/").length-1].split("\\")[fullpath(urlPath).split("/")[fullpath(urlPath).split("/").length-1].split("\\").length-1])};charset=utf-8`}}));//重新定义header
+            .then(res => res.arrayBuffer())
+            .then(buffer => new Response(buffer, { headers: { "Content-Type": `${getFileType(fullpath(urlPath).split("/")[fullpath(urlPath).split("/").length - 1].split("\\")[fullpath(urlPath).split("/")[fullpath(urlPath).split("/").length - 1].split("\\").length - 1])};charset=utf-8` } }));//重新定义header
     }
-    else{
+    else {
         return fetch(req);
     }
 }
