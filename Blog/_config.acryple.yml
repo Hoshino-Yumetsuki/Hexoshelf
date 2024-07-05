@@ -871,8 +871,6 @@ inject:
   head:
   - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/mainColor/heoMainColor.css">
   - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/404/404.css">
-  - <link rel="stylesheet" type="text/css" href="/js/jike.js">
-  - <link rel="stylesheet" type="text/css" href="/js/jikewater.js">
   - <link rel="stylesheet" type="text/css" href="/css/404page.css">
   - <script src="/live2d-widget/autoload.js"></script>
   - <link rel="stylesheet" href="/css/ariasakablog.css">
@@ -899,7 +897,6 @@ inject:
   - <div class="aplayer no-destroy" data-id="7803928554" data-server="netease" data-type="playlist" data-listFolded="false" data-preload="metadata" data-theme="var(--lyx-theme)" data-fixed="true" data-autoplay="false" data-volume=0.1 style="z-index:514"> </div>
   - <script type="text/javascript" src="/js/aplayersave.js"></script>
   - <script type="text/javascript" src="/js/noie.js"></script>
-  - <script src="https://cdn.cbd.int/leancloud-storage@4.13.1/dist/av-min.js"></script>
   - <script src="https://cdn.cbd.int/winbox/dist/winbox.bundle.min.js"></script>
   - <script src="https://cdn.cbd.int/sweetalert2@8/dist/sweetalert2.all.js"></script>
   - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
@@ -913,7 +910,6 @@ inject:
   - <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   - <script type="text/javascript" src="/js/sitetime.js"></script>
   - <script data-pjax="" type="text/javascript" src="/js/heimu.js"></script>
-  - <script data-pjax="" src="/js/bbtalklunbo.js"></script>
   - <script data-pjax="" src="/js/fps.js"></script>
   - <script data-pjax="" src="/js/dis.js"></script>
   - <script data-pjax="" src="/js/settings.js"></script>
