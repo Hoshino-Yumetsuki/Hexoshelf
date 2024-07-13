@@ -286,3 +286,26 @@ hexo_seo_autopush:
 
 live2d:
   enable: true
+
+hexo_esbuild:
+  enable: true
+  js:
+    enable: true
+    after_render: "js" # hexo filter hook. support https://hexo.io/api/filter#after-render
+    priority: 999 # hexo filter priority. Lower priority means that it will be executed first
+    exclude:
+      - "**.min.js"
+    esbuildTransformOptions: # the esbuild transform options. https://esbuild.github.io/api/#transform
+      loader: "js"
+      minify: true
+      logLevel: "warning"
+  css:
+    enable: true
+    after_render: "css"
+    priority: 999
+    exclude:
+      - "**.min.css"
+    esbuildTransformOptions:
+      loader: "css"
+      minify: true
+      logLevel: "warning"

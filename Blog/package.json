@@ -25,6 +25,7 @@
     "hexo-butterfly-wowjs": "^1.0.5",
     "hexo-cli": "^4.3.1",
     "hexo-deployer-git": "^4.0.0",
+    "hexo-esbuild": "^0.1.0",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-baidu-sitemap": "^0.1.9",
@@ -53,7 +54,8 @@
     "object-assign": "^4.1.1",
     "solarlunar": "^2.0.7",
     "vue": "^3.3.7",
-    "vue-contextmenujs": "^1.4.11"
+    "vue-contextmenujs": "^1.4.11",
+    "yarn": "^1.22.22"
   },
   "main": "index.js",
   "repository": {
