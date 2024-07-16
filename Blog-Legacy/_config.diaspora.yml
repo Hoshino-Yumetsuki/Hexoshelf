@@ -112,5 +112,6 @@ live2d_widget: true
 inject:
   head:
     - <script src="/js/title.js"></script>
+    - <link rel="stylesheet" href="/css/extrastyle.css">
   body:
   # -
