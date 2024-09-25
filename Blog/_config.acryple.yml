@@ -4,7 +4,7 @@
 # 修改导航栏项
 menu:
   首页: / ||fa fa-home
-  遗章: https://legacy.anjiurine.top/ || fa fa-hourglass
+  遗章: https://legacy.yumetsuki.moe/ || fa fa-hourglass
   文章 ||  fa fa-newspaper:
     随便逛逛: javascript:toRandomPost() || fa fa-paper-plane
     归档: /archives/ || fa fa-archive
@@ -15,16 +15,14 @@ menu:
     朋友圈: /fcircle/ || fab fa-galactic-republic
     分站: /othersite/ || fa fa-tasks
   工具 || fa fa-briefcase:
-    Pixiv镜像站: https://pixiv.anjiurine.top/ || fa fa-book
+    Pixiv镜像站: https://pixiv.yumetsuki.moe/ || fa fa-book
   我的 || fa-fw fas fa-address-card:
     追番: /bangumis/ || fa-fw fas fa fa-film
     关于我: /about/ || fa fa-info-circle
     大饼: /bigpie/ || fas fa-cheese
   线路 || fas fa-link:
-    主站: https://anjiurine.top/
+    主站: https://yumetsuki.moe/
     Github: https://hoshino-yumetsuki.github.io/
-    Cloudflare: https://cf.anjiurine.top/
-
 
 # Code Blocks (代碼相關)
 # --------------------------------------
@@ -95,11 +93,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: https://img-r2.anjiurine.top/q78kg/avatar.webp
+favicon: https://img-r2.yumetsuki.moe/q78kg/avatar.webp
 
 # Avatar (頭像)
 avatar:
-  img: https://img-r2.anjiurine.top/q78kg/avatar.webp
+  img: https://img-r2.yumetsuki.moe/q78kg/avatar.webp
   effect: false
 
 # Disable all banner image
@@ -152,7 +150,7 @@ error_img:
 error_404:
   enable: true
   subtitle: 'Page Not Found'
-  background: https://pximg.anjiurine.top/img-original/img/2022/04/27/09/50/10/97911234_p0.jpg
+  background: https://pximg.yumetsuki.moe/img-original/img/2022/04/27/09/50/10/97911234_p0.jpg
 
 post_meta:
   page: # Home Page
@@ -359,7 +357,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo.anjiurine.top
+  envId: https://twikoo.yumetsuki.moe
   region:
   visitor: true
   option:
@@ -851,9 +849,9 @@ lazyload:
 pwa:
   enable: true
   manifest: /manifest.json
-  apple_touch_icon: https://img-r2.anjiurine.top/q78kg/avatar.webp
-  favicon_32_32: https://img-r2.anjiurine.top/q78kg/avatar.webp
-  favicon_16_16: https://img-r2.anjiurine.top/q78kg/avatar.webp
+  apple_touch_icon: https://img-r2.yumetsuki.moe/q78kg/avatar.webp
+  favicon_32_32: https://img-r2.yumetsuki.moe/q78kg/avatar.webp
+  favicon_16_16: https://img-r2.yumetsuki.moe/q78kg/avatar.webp
   mask_icon: /img/safari-pinned-tab.svg
 
 # Open graph meta tags
@@ -1123,7 +1121,7 @@ gitcalendar:
 # color: "['#e4dfd7', '#f9f4dc', '#f7e8aa', '#f7e8aa', '#f8df72', '#fcd217', '#fcc515', '#f28e16', '#fb8b05', '#d85916', '#f43e06']" #橘黄色调
 #  color: "['#ebedf0', '#f0fff4', '#dcffe4', '#bef5cb', '#85e89d', '#34d058', '#28a745', '#22863a', '#176f2c', '#165c26', '#144620']" #翠绿色调
   color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
-  apiurl: gcapi.anjiurine.top
+  apiurl: gcapi.yumetsuki.moe
   # api: https://python-gitee-calendar-api.vercel.app/api
   # calendar_js: https://cdn.cbd.int/reverse-stu-allversions/butterfly/diy/hexo_githubcalendar.js
   # plus_style: ""

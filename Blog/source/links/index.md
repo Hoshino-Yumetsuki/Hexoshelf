@@ -24,7 +24,7 @@ type: "links"
     descr: 期待您的光临！
   - name: Tianli
     link: https://tianli-blog.club/
-    avatar: https://img-r2.anjiurine.top/q78kg/flink/Tianli.webp
+    avatar: https://img-r2.yumetsuki.moe/q78kg/flink/Tianli.webp
     descr: 自知之明是最可贵的知识！
   - name: EthanYep
     link: https://blog.ethanyep.cn/
@@ -134,8 +134,8 @@ type: "links"
 
 ```yaml
 - name: 梦溯·镜影
-  link: https://anjiurine.top/
-  avatar: https://img-r2.anjiurine.top/q78kg/avatar.webp
+  link: https://yumetsuki.moe/
+  avatar: https://img-r2.yumetsuki.moe/q78kg/avatar.webp
   descr: sleeeeep
   siteshot: https://vercel.yaria.top/img/siteshot.png
 ```
@@ -145,7 +145,7 @@ type: "links"
 <!-- tab fluid -->
 
 ```yaml
-- { title: "梦溯·镜影", intro: "sleeeeep", link: "https://anjiurine.top/", image: "https://img-r2.anjiurine.top/q78kg/avatar.webp" }
+- { title: "梦溯·镜影", intro: "sleeeeep", link: "https://yumetsuki.moe/", image: "https://img-r2.yumetsuki.moe/q78kg/avatar.webp" }
 ```
 
 <!-- endtab -->
@@ -154,8 +154,8 @@ type: "links"
 
 ```yaml
 - title: 梦溯·镜影
-  avatar: https://img-r2.anjiurine.top/q78kg/avatar.webp
-  url: https://anjiurine.top/
+  avatar: https://img-r2.yumetsuki.moe/q78kg/avatar.webp
+  url: https://yumetsuki.moe/
   screenshot: https://vercel.yaria.top/img/siteshot.png
   keywords: 个人博客
   description: sleeeeep
@@ -166,7 +166,7 @@ type: "links"
 <!-- tab html -->
 
 ```html
-<a href="https://anjiurine.top/"><img src="https://img-r2.anjiurine.top/q78kg/avatar.webp" alt="avatar" />梦溯·镜影</a>
+<a href="https://yumetsuki.moe/"><img src="https://img-r2.yumetsuki.moe/q78kg/avatar.webp" alt="avatar" />梦溯·镜影</a>
 ```
 
 <!-- endtab -->

@@ -18,7 +18,7 @@ date: 2022-01-29 15:23:17
 <!-- 将apiurl改成你后端生成的api地址 -->
 <script type="text/javascript">
   var fdataUser = {
-    apiurl: 'https://fcircleapi.anjiurine.top/'
+    apiurl: 'https://fcircleapi.yumetsuki.moe/'
   }
 </script>
 <link rel="stylesheet" href="https://cdn.cbd.int/fcircle-immmmm/fcircle-beta.css">
