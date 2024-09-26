@@ -129,6 +129,10 @@ deploy:
   repo: git@github.com:Hoshino-Yumetsuki/Hexoshelf.git
   branch: gh-pages-blog
   ignore_hidden: false
+- type: git
+  repo: git@hf.co:datasets/Q78KG/q78kgblog
+  branch: main
+  ignore_hidden: false
 
 symbols_count_time:
   symbols: true
