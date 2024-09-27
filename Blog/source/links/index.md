@@ -69,6 +69,12 @@ type: "links"
     avatar: https://bu.dusays.com/2023/06/30/649e9ec88cf47.png
     descr: 人有悲欢离合 月有阴晴圆缺
     siteshot: https://vercel.yaria.top/img/siteshot.png
+  - name: 清羽飞扬
+    link: https://blog.liushen.fun/
+    avatar: https://blog.liushen.fun/info/avatar.ico
+    descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜
+    siteshot: https://blog.liushen.fun/info/siteshot.jpg
+
 
 {% endflink %}
 
