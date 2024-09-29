@@ -75,9 +75,9 @@ type: "links"
     descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜
     siteshot: https://blog.liushen.fun/info/siteshot.jpg
   - name: eastwind
-	link: https://996.windydante.top/
-	avatar: http://qiniu.xianwu.store/Image_1727602993857.jpg
-	descr: 东风不与周郎便
+    link: https://996.windydante.top/
+    avatar: http://qiniu.xianwu.store/Image_1727602993857.jpg
+    descr: 东风不与周郎便
 
 
 {% endflink %}
