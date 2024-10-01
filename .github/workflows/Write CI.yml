@@ -42,7 +42,6 @@ jobs:
         cp -r Posts/Write/ Write/source/_posts
         cd Write
         npm i hexo-cli -g
-        npm i yarn -g
         yarn
 
     - name: Setup Git Infomation

@@ -43,7 +43,6 @@ jobs:
         cp -r Posts/Blog/ Blog/source/_posts
         cd Blog
         npm i hexo-cli -g
-        npm i yarn -g
         yarn
 
     - name: Setup Git Infomation

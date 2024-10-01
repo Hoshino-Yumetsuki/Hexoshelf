@@ -42,7 +42,6 @@ jobs:
         cp -r Posts/Blog/ Blog-Legacy/source/_posts
         cd Blog-Legacy
         npm i hexo-cli -g
-        npm i yarn -g
         yarn
 
     - name: Setup Git Infomation
