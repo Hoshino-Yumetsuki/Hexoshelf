@@ -51,6 +51,5 @@ jobs:
     - name: Deploy Hexo
       run: |
         cd Write
-        hexo clean
-        hexo generate
-        hexo deploy
+        yarn build
+        yarn deploy

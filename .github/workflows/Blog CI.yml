@@ -52,10 +52,9 @@ jobs:
     - name: Deploy Hexo
       run: |
         cd Blog
-        hexo clean
-        hexo bangumi -u
-        hexo generate
-        hexo deploy
+        yarn bangumi
+        yarn build
+        yarn deploy
 
     - name: NPM Publish Pre Set
       run: |
