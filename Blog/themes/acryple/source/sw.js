@@ -91,8 +91,7 @@ const generate_blog_urls = (packagename, blogversion, path) => {
         // `https://cdn.afdelivr.top/npm/${packagename}@${blogversion}`,
         // `https://ariasakablog.s3.ladydaily.com`,
         // `https://registry.npmmirror.com/${packagename}/${blogversion}/files`,
-        // `https://cdn.cbd.int/${packagename}@${blogversion}`
-        `https://hf-mirror.com/datasets/Q78KG/${packagename}/raw/main`
+        `https://cdn.cbd.int/${packagename}@${blogversion}`
     ]
     for (var i in npmmirror) {
         npmmirror[i] += path
@@ -104,7 +103,7 @@ const mirror = [
     // `https://registry.npmjs.org/ariasakablog/latest`,
     // `https://registry.npmmirror.com/q78kgblog/latest`,
     // `https://cdn.cbd.int/q78kgblog`,
-    // `https://mirrors.cloud.tencent.com/npm/q78kgblog/latest`
+    `https://mirrors.cloud.tencent.com/npm/q78kgblog/latest`
 ]
 const get_newest_version = async (mirror) => {
     return lfetch(mirror, mirror[0])
