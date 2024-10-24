@@ -9,7 +9,7 @@ tags:
   - 负载均衡
   - 谷歌翻译
   - Workers
-cover: https://img-r2.yumetsuki.moe/q78kg/MXP1xJAnYDlLGWT.webp
+cover: https://img-r2.yumetsuki.moe/q78kg/113398570_p0.webp
 date: 2023-09-17 00:00:00
 swiper_index: 3
 ---
