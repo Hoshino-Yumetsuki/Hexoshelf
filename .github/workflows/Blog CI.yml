@@ -44,9 +44,12 @@ jobs:
         yarn
 
     - name: Setup Git Infomation
+      env:
+        GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+        GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
       run: |
-        git config --global user.name 'Hoshino-Yumetsuki'
-        git config --global user.email 'hoshino-yumetsuki@outlook.com'
+        git config --global user.name "$GIT_USER_NAME"
+        git config --global user.email "$GIT_USER_EMAIL"
 
     - name: Deploy Hexo
       run: |
