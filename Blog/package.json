@@ -58,17 +58,5 @@
     "vue-contextmenujs": "^1.4.11",
     "yarn": "^1.22.22"
   },
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Hoshino-Yumetsuki/Blog-client.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Hoshino-Yumetsuki/Blog-client/issues"
-  },
-  "homepage": "https://github.com/Hoshino-Yumetsuki/Blog-client#readme",
-  "description": "",
   "packageManager": "yarn@4.5.0"
 }
