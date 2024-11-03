@@ -61,7 +61,7 @@ jobs:
     - name: NPM Publish Pre Set
       run: |
         cd Blog
-        node -e "const { writeFile } = require('fs'); writeFile('./public/package.json', JSON.stringify({ name: "q78kgblog", "version": "0.0.0-"+new Date().getTime() }), (err) => { if (err) console.log(err); else console.log('Package.json file is created successfully.'); });"
+        node -e "const { writeFile } = require('fs'); writeFile('./public/package.json', JSON.stringify({ name: 'q78kgblog', version: '0.0.0-' + Date.now() }), (err) => { if (err) console.log(err); else console.log('Package.json file is created successfully.'); });"
 
     - uses: JS-DevTools/npm-publish@v3
       with:
