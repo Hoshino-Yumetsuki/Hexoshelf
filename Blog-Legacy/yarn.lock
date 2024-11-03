@@ -1191,25 +1191,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-site@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "hexo-site@workspace:."
-  dependencies:
-    hexo: "npm:^7.0.0"
-    hexo-abbrlink: "npm:^2.2.1"
-    hexo-deployer-git: "npm:^4.0.0"
-    hexo-generator-archive: "npm:^2.0.0"
-    hexo-generator-category: "npm:^2.0.0"
-    hexo-generator-index: "npm:^3.0.0"
-    hexo-generator-tag: "npm:^2.0.0"
-    hexo-renderer-ejs: "npm:^2.0.0"
-    hexo-renderer-marked: "npm:^6.0.0"
-    hexo-renderer-stylus: "npm:^3.0.0"
-    hexo-server: "npm:^3.0.0"
-    hexo-theme-landscape: "npm:^1.0.0"
-  languageName: unknown
-  linkType: soft
-
 "hexo-theme-landscape@npm:^1.0.0":
   version: 1.0.0
   resolution: "hexo-theme-landscape@npm:1.0.0"
@@ -2210,6 +2191,25 @@ __metadata:
   checksum: 10c0/14f76a8206bc3464f794fb2e3d3cc665ae416c01893ad7a02b23766eb07159144ee612ad67af5e84fa4479ccfe67678c4feb126b0485651b302babf66f04f9e9
   languageName: node
   linkType: hard
+
+"q78kg-blog-legacy@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "q78kg-blog-legacy@workspace:."
+  dependencies:
+    hexo: "npm:^7.0.0"
+    hexo-abbrlink: "npm:^2.2.1"
+    hexo-deployer-git: "npm:^4.0.0"
+    hexo-generator-archive: "npm:^2.0.0"
+    hexo-generator-category: "npm:^2.0.0"
+    hexo-generator-index: "npm:^3.0.0"
+    hexo-generator-tag: "npm:^2.0.0"
+    hexo-renderer-ejs: "npm:^2.0.0"
+    hexo-renderer-marked: "npm:^6.0.0"
+    hexo-renderer-stylus: "npm:^3.0.0"
+    hexo-server: "npm:^3.0.0"
+    hexo-theme-landscape: "npm:^1.0.0"
+  languageName: unknown
+  linkType: soft
 
 "querystringify@npm:^2.1.1":
   version: 2.2.0
