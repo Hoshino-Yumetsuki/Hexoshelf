@@ -1,38 +1,36 @@
 const btf = {
-  debounce: function (func, wait, immediate) {
+  debounce: (func, wait = 300, immediate = false) => {
     let timeout
-    return function () {
-      const context = this
-      const args = arguments
-      const later = function () {
+    return (...args) => {
+      const later = () => {
         timeout = null
-        if (!immediate) func.apply(context, args)
+        if (!immediate) func.apply(this, args)
       }
       const callNow = immediate && !timeout
       clearTimeout(timeout)
       timeout = setTimeout(later, wait)
-      if (callNow) func.apply(context, args)
+      if (callNow) func.apply(this, args)
     }
   },
 
-  throttle: function (func, wait, options) {
+  throttle: (func, wait = 300, options = {}) => {
     let timeout, context, args
     let previous = 0
-    if (!options) options = {}
 
-    const later = function () {
-      previous = options.leading === false ? 0 : new Date().getTime()
+    const later = () => {
+      previous = options.leading === false ? 0 : Date.now()
       timeout = null
       func.apply(context, args)
-      if (!timeout) context = args = null
+      context = args = null
     }
 
-    const throttled = function () {
-      const now = new Date().getTime()
+    return function throttled(...params) {
+      const now = Date.now()
       if (!previous && options.leading === false) previous = now
       const remaining = wait - (now - previous)
       context = this
-      args = arguments
+      args = params
+
       if (remaining <= 0 || remaining > wait) {
         if (timeout) {
           clearTimeout(timeout)
@@ -40,13 +38,11 @@ const btf = {
         }
         previous = now
         func.apply(context, args)
-        if (!timeout) context = args = null
+        context = args = null
       } else if (!timeout && options.trailing !== false) {
         timeout = setTimeout(later, remaining)
       }
     }
-
-    return throttled
   },
 
   sidebarPaddingR: () => {
@@ -72,38 +68,36 @@ const btf = {
   },
 
   diffDate: (d, more = false) => {
-    const dateNow = new Date()
-    const datePost = new Date(d)
-    const dateDiff = dateNow.getTime() - datePost.getTime()
-    const minute = 1000 * 60
-    const hour = minute * 60
-    const day = hour * 24
-    const month = day * 30
+    try {
+      const dateNow = new Date()
+      const datePost = new Date(d)
+      const dateDiff = dateNow - datePost
 
-    let result
-    if (more) {
-      const monthCount = dateDiff / month
-      const dayCount = dateDiff / day
-      const hourCount = dateDiff / hour
-      const minuteCount = dateDiff / minute
+      if (!more) return Math.floor(dateDiff / (1000 * 60 * 60 * 24))
 
-      if (monthCount > 12) {
-        result = datePost.toLocaleDateString().replace(/\//g, '-')
-      } else if (monthCount >= 1) {
-        result = parseInt(monthCount) + ' ' + GLOBAL_CONFIG.date_suffix.month
-      } else if (dayCount >= 1) {
-        result = parseInt(dayCount) + ' ' + GLOBAL_CONFIG.date_suffix.day
-      } else if (hourCount >= 1) {
-        result = parseInt(hourCount) + ' ' + GLOBAL_CONFIG.date_suffix.hour
-      } else if (minuteCount >= 1) {
-        result = parseInt(minuteCount) + ' ' + GLOBAL_CONFIG.date_suffix.min
-      } else {
-        result = GLOBAL_CONFIG.date_suffix.just
+      const times = {
+        month: 1000 * 60 * 60 * 24 * 30,
+        day: 1000 * 60 * 60 * 24,
+        hour: 1000 * 60 * 60,
+        minute: 1000 * 60
       }
-    } else {
-      result = parseInt(dateDiff / day)
+
+      if (dateDiff / times.month > 12) {
+        return datePost.toLocaleDateString().replace(/\//g, '-')
+      }
+
+      for (const [unit, ms] of Object.entries(times)) {
+        const count = Math.floor(dateDiff / ms)
+        if (count >= 1) {
+          return `${count} ${GLOBAL_CONFIG.date_suffix[unit]}`
+        }
+      }
+
+      return GLOBAL_CONFIG.date_suffix.just
+    } catch (e) {
+      console.error('Date calculation error:', e)
+      return ''
     }
-    return result
   },
 
   loadComment: (dom, callback) => {
@@ -121,33 +115,30 @@ const btf = {
   },
 
   scrollToDest: (pos, time = 500) => {
-    const currentPos = window.pageYOffset
-    if (currentPos > pos) pos = pos - 70
+    try {
+      const currentPos = window.pageYOffset
+      pos = currentPos > pos ? pos - 70 : pos
 
-    if ('scrollBehavior' in document.documentElement.style) {
-      window.scrollTo({
-        top: pos,
-        behavior: 'smooth'
-      })
-      return
+      if ('scrollBehavior' in document.documentElement.style) {
+        return window.scrollTo({ top: pos, behavior: 'smooth' })
+      }
+
+      const scrollStep = (currentTime) => {
+        const progress = currentTime - start
+        const percentage = Math.min(progress / time, 1)
+
+        window.scrollTo(0, currentPos + (pos - currentPos) * percentage)
+
+        if (progress < time) {
+          requestAnimationFrame(scrollStep)
+        }
+      }
+
+      const start = performance.now()
+      requestAnimationFrame(scrollStep)
+    } catch (e) {
+      console.error('Scroll error:', e)
     }
-
-    let start = null
-    pos = +pos
-    window.requestAnimationFrame(function step (currentTime) {
-      start = !start ? currentTime : start
-      const progress = currentTime - start
-      if (currentPos < pos) {
-        window.scrollTo(0, ((pos - currentPos) * progress / time) + currentPos)
-      } else {
-        window.scrollTo(0, currentPos - ((currentPos - pos) * progress / time))
-      }
-      if (progress < time) {
-        window.requestAnimationFrame(step)
-      } else {
-        window.scrollTo(0, pos)
-      }
-    })
   },
 
   animateIn: (ele, text) => {
@@ -156,7 +147,7 @@ const btf = {
   },
 
   animateOut: (ele, text) => {
-    ele.addEventListener('animationend', function f () {
+    ele.addEventListener('animationend', function f() {
       ele.style.display = ''
       ele.style.animation = ''
       ele.removeEventListener('animationend', f)

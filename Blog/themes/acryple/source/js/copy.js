@@ -10,7 +10,7 @@ document.oncopy = function () {
 };
 document.onkeydown = function (event) {
     event = (event || window.event);
-    if (event.keyCode == 123) {
+    if (event.code === 'F12') {
         Snackbar.show({
             text: '已打开开发者模式，扒源请谨记MIT协议！',
             pos: 'top-right',

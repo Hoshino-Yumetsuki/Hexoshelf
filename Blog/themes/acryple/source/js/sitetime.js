@@ -1,25 +1,40 @@
-function siteTime(){
-    window.setTimeout("siteTime()", 500);
-    var seconds = 1000;
-    var minutes = seconds * 60;
-    var hours = minutes * 60;
-    var days = hours * 24;
-    var years = days * 365;
-    var today = new Date();
-    var todayYear = today.getFullYear();
-    var todayMonth = today.getMonth()+1;
-    var todayDate = today.getDate();
-    var todayHour = today.getHours();
-    var todayMinute = today.getMinutes();
-    var todaySecond = today.getSeconds();
-    var t1 = Date.UTC(2022,6,4,12,00,00);
-    var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
-    var diff = t2-t1;
-    var diffYears = Math.floor(diff/years);
-    var diffDays = Math.floor((diff/days)-diffYears*365);
-    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
-    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
-    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
-    document.getElementById("footer_custom_text").innerHTML=" 这个小破站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 时 "+diffMinutes+" 分 "+diffSeconds+" 秒";
+function siteTime() {
+    const startDate = new Date(Date.UTC(2022, 6, 4, 12, 0, 0));
+
+    function updateTime() {
+        try {
+            const now = new Date();
+            const diff = now - startDate;
+
+            // 时间计算常量
+            const SECOND = 1000;
+            const MINUTE = SECOND * 60;
+            const HOUR = MINUTE * 60;
+            const DAY = HOUR * 24;
+            const YEAR = DAY * 365;
+
+            // 计算时间差
+            const years = Math.floor(diff / YEAR);
+            const days = Math.floor((diff % YEAR) / DAY);
+            const hours = Math.floor((diff % DAY) / HOUR);
+            const minutes = Math.floor((diff % HOUR) / MINUTE);
+            const seconds = Math.floor((diff % MINUTE) / SECOND);
+
+            // 更新DOM
+            const element = document.getElementById("footer_custom_text");
+            if (element) {
+                element.textContent = `这个小破站已运行 ${years} 年 ${days} 天 ${hours} 时 ${minutes} 分 ${seconds} 秒`;
+            }
+        } catch (error) {
+            console.error('运行时间计算出错:', error);
+        }
+    }
+
+    // 初始更新
+    updateTime();
+    // 每500毫秒更新一次
+    setInterval(updateTime, 500);
 }
-siteTime();
+
+// 页面加载完成后启动计时器
+document.addEventListener('DOMContentLoaded', siteTime);

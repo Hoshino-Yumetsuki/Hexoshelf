@@ -8,7 +8,7 @@ window.addEventListener('load', () => {
     setTimeout(() => { document.querySelector('#algolia-search .ais-SearchBox-input').focus() }, 100)
 
     // shortcut: ESC
-    document.addEventListener('keydown', function f (event) {
+    document.addEventListener('keydown', function f(event) {
       if (event.code === 'Escape') {
         closeSearch()
         document.removeEventListener('keydown', f)
@@ -137,7 +137,7 @@ window.addEventListener('load', () => {
   })
 
 
-  search.addWidgets([configure,searchBox,hits,stats,powerBy,pagination]) // add the widgets to the instantsearch instance
+  search.addWidgets([configure, searchBox, hits, stats, powerBy, pagination]) // add the widgets to the instantsearch instance
 
   search.start()
 

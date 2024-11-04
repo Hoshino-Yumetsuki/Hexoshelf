@@ -1,8 +1,8 @@
 /**
  * Calendar - displays a calendar of the current month. Dates appear links if there are posts for that day.
  */
- (function($) {
-  var aCalendar = function(language, options, object) {
+(function ($) {
+  var aCalendar = function (language, options, object) {
     var now = new Date();
     var nDay = now.getDate();
     var nMonth = now.getMonth();
@@ -101,7 +101,7 @@
           $.ajax({
             url: settings.url,
             async: false,
-            success: function(data) {
+            success: function (data) {
               allPosts = data;
               initMonths(Object.keys(allPosts));
             }
@@ -124,7 +124,7 @@
         $.ajax({
           url: settings.root + 'list.json',
           async: false,
-          success: function(data) {
+          success: function (data) {
             initMonths(data);
           }
         });
@@ -134,7 +134,7 @@
         $.ajax({
           url: settings.root + dYear + '-' + (dMonth + 1) + '.json',
           async: false,
-          success: function(data) {
+          success: function (data) {
             current.posts = data;
           }
         });
@@ -145,7 +145,7 @@
      * Initial months array.
      */
     function initMonths(array) {
-      months = array.map(function(item) {
+      months = array.map(function (item) {
         var ym = item.split('-');
         return new Date(Date.UTC(+ym[0], +ym[1] - 1));
       });
@@ -284,11 +284,11 @@
           .attr('title', simpleDateFormat(current.next, settings.postsMonthTip));
       }
 
-      cPrevPosts.on('click', function() {
+      cPrevPosts.on('click', function () {
         toPostsMonth(current.prev);
       });
 
-      cNextPosts.on('click', function() {
+      cNextPosts.on('click', function () {
         toPostsMonth(current.next);
       });
 
@@ -352,8 +352,8 @@
     return draw();
   };
 
-  $.fn.aCalendar = function(Lang, oInit) {
-    return this.each(function() {
+  $.fn.aCalendar = function (Lang, oInit) {
+    return this.each(function () {
       return aCalendar(Lang, oInit, $(this));
     });
   };
@@ -366,8 +366,8 @@
     postsMonthTip: 'Posts published in LMM yyyy',
     titleFormat: 'yyyy LMM',
     titleLinkFormat: '/archives/yyyy/MM/',
-    headArrows: {previous: '<span class="cal-prev"></span>', next: '<span class="cal-next"></span>'},
-    footArrows: {previous: '« ', next: ' »'},
+    headArrows: { previous: '<span class="cal-prev"></span>', next: '<span class="cal-next"></span>' },
+    footArrows: { previous: '« ', next: ' »' },
     weekOffset: 0,
     single: true,
     root: '/calendar/',
