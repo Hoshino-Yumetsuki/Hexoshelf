@@ -1,9 +1,16 @@
-const CACHE_NAME = 'ICDNCache';
+const CONFIG = {
+    CACHE_NAME: 'ICDNCache',
+    UPDATE_INTERVAL: 60 * 1000,
+    STARTUP_DELAY: 5000,
+    TARGET_DOMAIN: 'yumetsuki.moe',
+    DEFAULT_VERSION: 'latest'
+};
+
 let cachelist = [];
 self.addEventListener('install', async function (installEvent) {
     self.skipWaiting();
     installEvent.waitUntil(
-        caches.open(CACHE_NAME)
+        caches.open(CONFIG.CACHE_NAME)
             .then(function (cache) {
                 console.log('Opened cache');
                 return cache.addAll(cachelist);
@@ -13,8 +20,13 @@ self.addEventListener('install', async function (installEvent) {
 self.addEventListener('fetch', async event => {
     try {
         event.respondWith(handle(event.request))
-    } catch (msg) {
-        event.respondWith(handleerr(event.request, msg))
+    } catch (err) {
+        console.error('Fetch error:', err);
+        if (fullpath(urlPath).indexOf(".html") !== -1) {
+            event.respondWith(fetch("/404.html"))
+        } else {
+            event.respondWith(handleerr(event.request, err.message))
+        }
     }
 });
 const handleerr = async (req, msg) => {
@@ -64,15 +76,6 @@ const lfetch = async (urls, url) => {
         })
     }))
 }
-self.addEventListener('fetch', async event => {
-    try {
-        event.respondWith(handle(event.request))
-    } catch (err) {
-        if (fullpath(urlPath).indexOf(".html") != -1) {
-            event.respondWith(fetch("/404.html"))
-        }
-    }
-});
 const fullpath = (path) => {
     path = path.split('?')[0].split('#')[0]
     if (path.match(/\/$/)) {
@@ -114,7 +117,7 @@ self.db = { //全局定义db,只要read和write,看不懂可以略过
     read: (key, config) => {
         if (!config) { config = { type: "text" } }
         return new Promise((resolve, reject) => {
-            caches.open(CACHE_NAME).then(cache => {
+            caches.open(CONFIG.CACHE_NAME).then(cache => {
                 cache.match(new Request(`https://LOCALCACHE/${encodeURIComponent(key)}`)).then(function (res) {
                     if (!res) resolve(null)
                     res.text().then(text => resolve(text))
@@ -126,7 +129,7 @@ self.db = { //全局定义db,只要read和write,看不懂可以略过
     },
     write: (key, value) => {
         return new Promise((resolve, reject) => {
-            caches.open(CACHE_NAME).then(function (cache) {
+            caches.open(CONFIG.CACHE_NAME).then(function (cache) {
                 cache.put(new Request(`https://LOCALCACHE/${encodeURIComponent(key)}`), new Response(value));
                 resolve()
             }).catch(() => {
@@ -147,47 +150,50 @@ const set_newest_version = async (mirror) => { //改为最新版本写入数据�
 
 setInterval(async () => {
     await set_newest_version(mirror) //定时更新,一分钟一次
-}, 60 * 1000);
+}, CONFIG.UPDATE_INTERVAL);
 
 setTimeout(async () => {
     await set_newest_version(mirror)//打开五秒后更新,避免堵塞
-}, 5000)
+}, CONFIG.STARTUP_DELAY)
+
+// 缓存文件类型映射
+const MIME_TYPES = {
+    'html': 'text/html',
+    'htm': 'text/html',
+    'js': 'text/javascript',
+    'css': 'text/css',
+    'jpg': 'image/jpeg',
+    'jpeg': 'image/jpeg',
+    'ico': 'image/x-icon',
+    'png': 'image/png'
+};
+
 function getFileType(fileName) {
-    suffix = fileName.split('.')[fileName.split('.').length - 1]
-    if (suffix == "html" || suffix == "htm") {
-        return 'text/html';
-    }
-    if (suffix == "js") {
-        return 'text/javascript';
-    }
-    if (suffix == "css") {
-        return 'text/css';
-    }
-    if (suffix == "jpg" || suffix == "jpeg") {
-        return 'image/jpeg';
-    }
-    if (suffix == "ico") {
-        return 'image/x-icon';
-    }
-    if (suffix == "png") {
-        return 'image/png';
-    }
-    return 'text/plain';
+    const suffix = fileName.split('.').pop().toLowerCase();
+    return MIME_TYPES[suffix] || 'text/plain';
 }
+
 const handle = async (req) => {
-    const urlStr = req.url
-    const urlObj = new URL(urlStr);
-    const urlPath = urlObj.pathname;
-    const domain = urlObj.hostname;
-    //从这里开始
-    lxs = []
-    if (domain === "yumetsuki.moe") {//这里写你需要拦截的域名
-        var l = lfetch(generate_blog_urls('q78kgblog', await db.read('blog_version') || 'latest', fullpath(urlPath)))
-        return l
-            .then(res => res.arrayBuffer())
-            .then(buffer => new Response(buffer, { headers: { "Content-Type": `${getFileType(fullpath(urlPath).split("/")[fullpath(urlPath).split("/").length - 1].split("\\")[fullpath(urlPath).split("/")[fullpath(urlPath).split("/").length - 1].split("\\").length - 1])};charset=utf-8` } }));//重新定义header
+    const urlObj = new URL(req.url);
+    const { pathname: urlPath, hostname: domain } = urlObj;
+
+    if (domain === CONFIG.TARGET_DOMAIN) {
+        const version = await db.read('blog_version') || CONFIG.DEFAULT_VERSION;
+        try {
+            const res = await lfetch(
+                generate_blog_urls('q78kgblog', version, fullpath(urlPath))
+            );
+            const buffer = await res.arrayBuffer();
+            const fileName = fullpath(urlPath).split("/").pop().split("\\").pop();
+            return new Response(buffer, {
+                headers: {
+                    "Content-Type": `${getFileType(fileName)};charset=utf-8`
+                }
+            });
+        } catch (err) {
+            console.error('Resource fetch error:', err);
+            return handleerr(req, '资源加载失败');
+        }
     }
-    else {
-        return fetch(req);
-    }
+    return fetch(req);
 }
