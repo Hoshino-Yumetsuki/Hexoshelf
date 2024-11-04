@@ -5,7 +5,7 @@ function startbarrage() {
 	try {
 		clearInterval(timer);
 		document.querySelector('.comment-barrage').innerHTML = "";
-		delete sw;
+		sw = null;
 	} catch (err) { }
 	const commentBarrageConfig = {
 		//浅色模式和深色模式颜色，务必保持一致长度，前面是背景颜色，后面是字体，随机选择，默认这个颜色还好
