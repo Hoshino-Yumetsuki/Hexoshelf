@@ -938,57 +938,57 @@ CDN:
   # when set it to local, you need to install hexo-butterfly-extjs
   third_party_provider: jsdelivr
   option:
-    # main_css:
-    # main:
-    # utils:
-    # translate:
-    # local_search:
-    # algolia_js:
-    # algolia_search_v4:
-    # instantsearch_v4:
-    # pjax:
-    # gitalk: https://cdn.cbd.int/twikoo/dist/twikoo.min.js
-    # gitalk_css:
-    # blueimp_md5:
-    # valine:
-    # disqusjs:
-    # disqusjs_css:
+    # main_css: /css/index.css
+    main: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/main.js
+    utils: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/utils.js
+    translate: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/tw_cn.js
+    local_search: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/search/local-search.js
+    algolia_js: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/search/algolia.js
+    algolia_search_v4: https://cdn.cbd.int/algoliasearch@4/dist/algoliasearch-lite.umd.js
+    instantsearch_v4: https://cdn.cbd.int/instantsearch.js@4/dist/instantsearch.production.min.js
+    pjax: https://cdn.cbd.int/pjax/pjax.min.js
+    gitalk: https://cdn.cbd.int/gitalk/dist/gitalk.js
+    gitalk_css: https://cdn.cbd.int/gitalk/dist/gitalk.css
+    blueimp_md5: https://cdn.cbd.int/blueimp-md5/js/md5.min.js
+    valine: https://cdn.cbd.int/valine/dist/Valine.min.js
+    disqusjs: https://cdn.cbd.int/disqusjs@1/dist/disqus.js
+    disqusjs_css: https://cdn.cbd.int/disqusjs@1/dist/disqusjs.css
     twikoo: https://cdn.cbd.int/twikoo/dist/twikoo.min.js
-    # waline_js:
-    # waline_css:
-    # sharejs:
-    # sharejs_css:
-    # mathjax:
-    # katex:
-    # katex_copytex:
+    waline_js: https://cdn.cbd.int/@waline/client/dist/waline.js
+    waline_css: https://cdn.cbd.int/@waline/client/dist/waline.css
+    sharejs: https://cdn.cbd.int/dist/js/social-share.min.js
+    sharejs_css: https://cdn.cbd.int/social-share.js/dist/css/share.min.css
+    mathjax: https://cdn.cbd.int/mathjax@3/es5/tex-mml-chtml.js
+    katex: https://cdn.cbd.int/katex/dist/katex.min.css
+    katex_copytex: https://cdn.cbd.int/katex/dist/contrib/copy-tex.min.js
     # katex_copytex_css:
-    # mermaid:
-    # canvas_ribbon:
-    # canvas_fluttering_ribbon:
-    # canvas_nest:
-    # lazyload:
-    # instantpage:
-    # typed:
-    # pangu:
-    # fancybox_css_v4:
-    # fancybox_v4:
-    # medium_zoom:
-    # snackbar_css:
-    # snackbar:
-    # activate_power_mode:
-    # fireworks:
-    # click_heart:
-    # ClickShowText:
-    fontawesomeV6: https://cdn.cbd.int/@fortawesome/fontawesome-free/css/all.min.css
-    # flickr_justified_gallery_js:
-    # flickr_justified_gallery_css:
-    # aplayer_css:
-    # aplayer_js:
-    # meting_js: /js/meting.js
-    # prismjs_js:
-    # prismjs_lineNumber_js:
-    # prismjs_autoloader:
-    vue: https://cdn.cbd.int/vue@2/dist/vue.min.js  # vue.js依赖
+    mermaid: https://cdn.cbd.int/mermaid/dist/mermaid.min.js
+    canvas_ribbon: https://cdn.cbd.int/butterfly-extsrc@1/dist/canvas-ribbon.min.js
+    canvas_fluttering_ribbon: https://cdn.cbd.int/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
+    canvas_nest: https://cdn.cbd.int/butterfly-extsrc@1/dist/canvas-nest.min.js
+    activate_power_mode: https://cdn.cbd.int/butterfly-extsrc@1/dist/activate-power-mode.min.js
+    fireworks: https://cdn.cbd.int/butterfly-extsrc@1/dist/fireworks.min.js
+    click_heart: https://cdn.cbd.int/butterfly-extsrc@1/dist/click-heart.min.js
+    ClickShowText: https://cdn.cbd.int/butterfly-extsrc@1/dist/click-show-text.min.js
+    lazyload: https://cdn.cbd.int/vanilla-lazyload/dist/lazyload.iife.min.js
+    instantpage: https://cdn.cbd.int/instant.page@5/instantpage.js
+    typed: https://cdn.cbd.int/typed.js/dist/typed.umd.js
+    pangu: https://cdn.cbd.int/pangu@4/dist/browser/pangu.min.js
+    fancybox_css_v4: https://cdn.cbd.int/@fancyapps/ui/dist/fancybox/fancybox.css
+    fancybox_v4: https://cdn.cbd.int/@fancyapps/ui/dist/fancybox/fancybox.umd.js
+    medium_zoom: https://cdn.cbd.int/medium-zoom/dist/medium-zoom.min.js
+    snackbar_css: https://cdn.cbd.int/node-snackbar/dist/snackbar.min.css
+    snackbar: https://cdn.cbd.int/node-snackbar/dist/snackbar.min.js
+    fontawesomeV6: https://cdn.cbd.int/@fortawesome/fontawesome-free@6/css/all.min.css
+    flickr_justified_gallery_js: https://cdn.cbd.int/flickr-justified-gallery@2/dist/fjGallery.min.js
+    flickr_justified_gallery_css: https://cdn.cbd.int/flickr-justified-gallery@2/dist/fjGallery.css
+    aplayer_css: https://cdn.cbd.int/aplayer@1/dist/APlayer.min.css
+    aplayer_js: https://cdn.cbd.int/aplayer@1/dist/APlayer.min.js
+    meting_js: /js/meting.js
+    prismjs_js: https://cdn.cbd.int/prismjs@1/prism.js
+    prismjs_lineNumber_js: https://cdn.cbd.int/prismjs@1/plugins/line-numbers/prism-line-numbers.min.js
+    prismjs_autoloader: https://cdn.cbd.int/prismjs@1/plugins/autoloader/prism-autoloader.min.js
+    vue: https://cdn.cbd.int/vue@2/dist/vue.min.js
     countup_js: /js/countup.js
     local_search: /js/local-search.js
 # hexo-butterfly-categories-card
@@ -1026,7 +1026,7 @@ tag_plugins:
     anima: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
     jquery: https://cdn.cbd.int/jquery/dist/jquery.min.js #issues标签依赖
     issues: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js #issues标签依赖
-    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参看https://akilar.top/posts/d2ebecef/
+    iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参https://akilar.top/posts/d2ebecef/
     carousel: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js
     tag_plugins_css: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/tag_plugins.css
 #侧栏悬浮卡片控制按钮
