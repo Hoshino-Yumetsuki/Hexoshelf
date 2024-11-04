@@ -214,7 +214,6 @@ body {
 
 #rightMenu:hover {
     border: 1px solid var(--lyx-theme);
-    /* box-shadow:0 0 3px var(--lyx-theme)!important; */
 }
 
 #rightMenu .rightMenu-group.rightMenu-line .rightMenu-item * {
@@ -296,9 +295,7 @@ body {
 .card-widget:hover,
 #recent-posts>.recent-post-item:hover {
     border: 1px solid var(--lyx-theme) !important;
-    box-shadow: 0 0 3px var(--lyx-theme) !important;
-
-
+    box-shadow: 0 0 3px var(--lyx-theme) !important
 }
 
 #subtitle {
@@ -309,7 +306,7 @@ body {
 .contrib-legend {
     text-align: right;
     padding: 0 14px 10px 0;
-    display: inline-block;
+    display: block;
     float: right;
 }
 
@@ -2317,6 +2314,7 @@ html {
 
     #recent-posts>.recent-post-item:not(.latest)>.recent-post-info>.article-title {
         -webkit-line-clamp: 1;
+        line-clamp: 1;
         /*控制标题的行数*/
         margin-top: 0.3rem;
         /*控制标题的上间距*/
@@ -2350,42 +2348,6 @@ html {
     }
 }
 
-/* 
-
-
-
-#app .body{
-    margin:0!important;
-}
-#app{
-    display: flex;
-    flex-wrap: wrap;
-}
-#app .tip{
-    width:100%
-}
-.meta::before,.meta::after,.timenode::after,.timenode::before{
-    display: none;
-}
-@media screen and (min-width: 1100px){
-    .timenode{
-    width:calc(100% / 3 - 40px)!important;
-}
-}
-@media screen and (min-width: 768px) and (max-width: 1100px){
-    .timenode{
-        width:calc(100% / 2 - 40px)!important;
-        }
-    }
-.timenode{
-    min-width:300px;
-    margin:15px;
-    width:100%;
-}
-.timenode .body{
-    width:100%;
-    height:100%;
-} */
 .category-list-item::marker {
     content: '' !important;
 }
@@ -3708,6 +3670,7 @@ body {
     background-clip: content-box;
     display: inline-block;
     -webkit-appearance: none;
+    appearance: none;
     user-select: none;
     outline: none;
     transform: translateY(5px);
@@ -6206,6 +6169,7 @@ code {
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     z-index: 514;
     display: none;
 }
