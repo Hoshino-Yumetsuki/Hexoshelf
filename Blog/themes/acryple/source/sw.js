@@ -111,7 +111,7 @@ const mirror = [
 const get_newest_version = async (mirror) => {
     return lfetch(mirror, mirror[0])
         .then(res => res.json())
-        .then(res.version)
+        .then(res => res.version)
 }
 self.db = { //全局定义db,只要read和write,看不懂可以略过
     read: (key, config) => {
@@ -178,13 +178,23 @@ const handle = async (req) => {
     const { pathname: urlPath, hostname: domain } = urlObj;
 
     if (domain === CONFIG.TARGET_DOMAIN) {
-        const version = await db.read('blog_version') || CONFIG.DEFAULT_VERSION;
         try {
-            const res = await lfetch(
-                generate_blog_urls('q78kgblog', version, fullpath(urlPath))
-            );
+            const version = await db.read('blog_version') || CONFIG.DEFAULT_VERSION;
+            const urls = generate_blog_urls('q78kgblog', version, fullpath(urlPath));
+
+            // 添加错误检查
+            if (!urls || urls.length === 0) {
+                throw new Error('无效的资源URL');
+            }
+
+            const res = await lfetch(urls);
+            if (!res) {
+                throw new Error('资源获取失败');
+            }
+
             const buffer = await res.arrayBuffer();
             const fileName = fullpath(urlPath).split("/").pop().split("\\").pop();
+
             return new Response(buffer, {
                 headers: {
                     "Content-Type": `${getFileType(fileName)};charset=utf-8`
@@ -192,7 +202,7 @@ const handle = async (req) => {
             });
         } catch (err) {
             console.error('Resource fetch error:', err);
-            return handleerr(req, '资源加载失败');
+            return handleerr(req, `资源加载失败: ${err.message}`);
         }
     }
     return fetch(req);

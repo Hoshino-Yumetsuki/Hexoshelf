@@ -128,7 +128,7 @@ if (m == 4 && dd == 4 || (m == 4 && dd == 5)) {//清明节
     }
 }
 
-var lunar = calendarFormatter.solar2lunar();
+var lunar = calendar.solar2lunar(y, m, dd);
 
 //农历采用汉字计算，防止出现闰月导致问题
 

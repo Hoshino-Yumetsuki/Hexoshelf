@@ -4,5 +4,8 @@ var evt = new CustomEvent("pjax:complete", {
 });
 window.dispatchEvent(evt);
 document.addEventListener('pjax:complete', (e) => {
-    $("#setting-buttons").show();
-})
+    const settingButtons = document.querySelector("#setting-buttons");
+    if (settingButtons) {
+        $(settingButtons).show();
+    }
+});

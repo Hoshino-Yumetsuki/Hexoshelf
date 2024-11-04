@@ -866,6 +866,7 @@ css_prefix: true
 # # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
+  - <script src="https://cdn.cbd.int/js-calendar-converter@0.0.6/dist/js-calendar-converter.js"></script>
   - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/mainColor/heoMainColor.css">
   - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/404/404.css">
   - <link rel="stylesheet" type="text/css" href="/css/404page.css">
