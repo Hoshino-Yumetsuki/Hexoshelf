@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   let blogNameWidth, menusWidth, searchWidth, $nav
   let mobileSidebarOpen = false
@@ -91,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
       highlightCopyEle = '<div class="copy-notice"></div><i class="fas fa-paste copy-button"></i>'
     }
 
-    const copy = (text, ctx) => {
-      if (document.queryCommandSupported && document.queryCommandSupported('copy')) {
-        document.execCommand('copy')
+    const copy = async (text, ctx) => {
+      try {
+        await navigator.clipboard.writeText(text)
         if (GLOBAL_CONFIG.Snackbar !== undefined) {
           btf.snackbarShow(GLOBAL_CONFIG.copy.success)
         } else {
@@ -102,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
           prevEle.style.opacity = 1
           setTimeout(() => { prevEle.style.opacity = 0 }, 700)
         }
-      } else {
+      } catch (err) {
         if (GLOBAL_CONFIG.Snackbar !== undefined) {
           btf.snackbarShow(GLOBAL_CONFIG.copy.noSupport)
         } else {
