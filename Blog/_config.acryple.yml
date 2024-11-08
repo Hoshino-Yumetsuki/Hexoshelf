@@ -914,7 +914,7 @@ inject:
   - <script src="/js/owo.js"></script>
   - <script src="/js/welcomeconsole.js"></script>
   - <script src="/js/hide.show.js"></script>
-  - <script data-pace-options='{ "restartOnRequestAfter":false,"eventLag":false}' src="https:https://cdn.cbd.int/pace@0.0.4/pace.js"></script>
+  - <script data-pace-options='{ "restartOnRequestAfter":false,"eventLag":false}' src="https://cdn.cbd.int/pace@0.0.4/pace.js"></script>
   - <script data-pjax="" src="/js/baiduhistory.js"></script>
   - <script src="/js/random.js"></script>
   - <script src="/js/lunar.js"></script>
