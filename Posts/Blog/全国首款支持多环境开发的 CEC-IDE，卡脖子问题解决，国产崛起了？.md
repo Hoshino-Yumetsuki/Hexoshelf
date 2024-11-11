@@ -6,6 +6,7 @@ cover: https://img-r2.yumetsuki.moe/q78kg/background7.webp
 categories: 闲聊杂谈
 date: 2023-08-25 00:00:00
 swiper_index: 2
+abbrlink: e54f7476
 ---
 
 以下文章来源于张洪 Heo，作者张洪 Heo

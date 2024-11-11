@@ -9,6 +9,7 @@ tags:
   - Butterfly
 cover: https://img-r2.yumetsuki.moe/q78kg/2761d84a-a699-423b-a03f-241235497d1d.webp
 categories: Hexo
+abbrlink: 164ef646
 ---
 
 ## 2022

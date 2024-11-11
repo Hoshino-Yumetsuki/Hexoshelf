@@ -12,6 +12,7 @@ tags:
 cover: https://img-r2.yumetsuki.moe/q78kg/MXP1xJAnYDlLGWT.webp
 date: 2023-09-17 00:00:00
 swiper_index: 3
+abbrlink: ad884987
 ---
 
 ## 事情起因
