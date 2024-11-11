@@ -18,10 +18,10 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Write/圣所往事.md"
+                    "file": "Blog/要写点什么......吗？.md"
                   },
                   "icon": "lucide-list",
-                  "title": "圣所往事 的大纲"
+                  "title": "要写点什么......吗？ 的大纲"
                 }
               }
             ]
@@ -37,7 +37,7 @@
                   "type": "mindmap",
                   "state": {},
                   "icon": "dot-network",
-                  "title": "Mind Map of 圣所往事"
+                  "title": "Mind Map of 要写点什么......吗？"
                 }
               }
             ]
@@ -51,18 +51,18 @@
         "dimension": 75.67567567567568,
         "children": [
           {
-            "id": "350db8aa0822edc8",
+            "id": "68b5d606072abbee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Write/圣所往事.md",
+                "file": "Blog/要写点什么......吗？.md",
                 "mode": "source",
                 "backlinks": false,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "圣所往事"
+              "title": "要写点什么......吗？"
             }
           }
         ]
@@ -188,6 +188,18 @@
               "icon": "lucide-archive",
               "title": "添加笔记属性"
             }
+          },
+          {
+            "id": "8b74da1e8e1f368a",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Blog/要写点什么......吗？.md"
+              },
+              "icon": "lucide-info",
+              "title": "要写点什么......吗？的笔记属性"
+            }
           }
         ]
       },
@@ -223,8 +235,11 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "350db8aa0822edc8",
+  "active": "68b5d606072abbee",
   "lastOpenFiles": [
+    "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md",
+    "Blog/要写点什么......吗？.md",
+    "Write/圣所往事.md",
     "Write/梦溯镜影-C2-樱花树下的契约.md",
     "Write/梦溯镜影-C1-被绑定的人生.md",
     "Write/梦溯镜影-C0-设定集.md",
@@ -233,10 +248,8 @@
     "Blog/家里云折腾之路——如何把一台好好的浪潮NF5270M3玩坏.md",
     "Blog/简爱中的女性意识.md",
     "Blog/全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？.md",
-    "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md",
     "Blog/拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡.md",
     "Blog/Next魔改记录.md",
-    "Write/圣所往事.md",
     "Blog/2024，哪些服务器提供商的性价比高？.md",
     "Blog/hello-world.md",
     "Write/hello-world.md",
@@ -252,8 +265,6 @@
     "canvas/Fast-Phasr-Next.canvas",
     "canvas",
     "未命名 1.md",
-    "这可能是首个Diffsinger数据集全自动标注工具——Fast-Phasr-Next.md",
-    "hello-world.md",
     "Excalidraw",
     "附件/RO4J{$VR96X{%$KANAVVX[I.jpg",
     "附件",

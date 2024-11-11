@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "要写点什么......吗？",
+      "path": "Blog/要写点什么......吗？.md"
+    },
+    {
+      "basename": "这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next",
+      "path": "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md"
+    },
+    {
       "basename": "圣所往事",
       "path": "Write/圣所往事.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？",
       "path": "Blog/全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？.md"
-    },
-    {
-      "basename": "这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next",
-      "path": "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md"
     },
     {
       "basename": "拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡",
