@@ -1,0 +1,191 @@
+name: Hexo Deploy
+
+on:
+  push:
+    paths:
+      - Blog/**
+      - Blog-Legacy/**
+      - Write/**
+      - Posts/Blog/**
+      - Posts/Write/**
+      - .github/**
+  watch:
+    types: [started]
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run_blog: ${{ steps.check_paths.outputs.blog }}
+      should_run_legacy: ${{ steps.check_paths.outputs.legacy }}
+      should_run_write: ${{ steps.check_paths.outputs.write }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Check modified paths
+        id: check_paths
+        run: |
+          git diff --name-only HEAD^ HEAD > changed_files.txt
+          echo "blog=false" >> $GITHUB_OUTPUT
+          echo "legacy=false" >> $GITHUB_OUTPUT
+          echo "write=false" >> $GITHUB_OUTPUT
+
+          if grep -q -E "^(Blog/|Posts/Blog/|.github/)" changed_files.txt; then
+            echo "blog=true" >> $GITHUB_OUTPUT
+          fi
+          if grep -q -E "^(Blog-Legacy/|Posts/Blog/|.github/)" changed_files.txt; then
+            echo "legacy=true" >> $GITHUB_OUTPUT
+          fi
+          if grep -q -E "^(Write/|Posts/Write/|.github/)" changed_files.txt; then
+            echo "write=true" >> $GITHUB_OUTPUT
+          fi
+
+  blog-build:
+    needs: setup
+    if: needs.setup.outputs.should_run_blog == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Setup Environment
+        run: |
+          corepack enable
+          yarn set version stable
+
+      - name: Setup SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Setup Hexo
+        run: |
+          cp -r Posts/Blog/ Blog/source/_posts
+          cd Blog
+          yarn
+
+      - name: Configure Git
+        env:
+          GIT_USER_NAME: ${{ secrets.GIT_USER_NAME }}
+          GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
+        run: |
+          git config --global user.name "$GIT_USER_NAME"
+          git config --global user.email "$GIT_USER_EMAIL"
+
+      - name: Build and Deploy
+        run: |
+          cd Blog
+          yarn bangumi
+          yarn build
+          yarn deploy
+
+      - name: Prepare NPM Package
+        run: |
+          cd Blog
+          node -e "const pkg = { name: 'q78kgblog', version: '0.0.0-' + Date.now() }; require('fs').writeFileSync('./public/package.json', JSON.stringify(pkg, null, 2));"
+
+      - name: Publish to NPM
+        uses: JS-DevTools/npm-publish@v3
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          package: ./Blog/public/package.json
+
+  blog-legacy-build:
+    needs: setup
+    if: needs.setup.outputs.should_run_legacy == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Setup Environment
+        run: |
+          corepack enable
+          yarn set version stable
+
+      - name: Setup SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Setup Hexo
+        run: |
+          cp -r Posts/Blog/ Blog-Legacy/source/_posts
+          cd Blog-Legacy
+          yarn
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'Hoshino-Yumetsuki'
+          git config --global user.email 'hoshino-yumetsuki@outlook.com'
+
+      - name: Build and Deploy
+        run: |
+          cd Blog-Legacy
+          yarn build
+          yarn deploy
+
+  write-build:
+    needs: setup
+    if: needs.setup.outputs.should_run_write == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Setup Environment
+        run: |
+          corepack enable
+          yarn set version stable
+
+      - name: Setup SSH
+        env:
+          DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_PRIVATE_KEY }}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Setup Hexo
+        run: |
+          cp -r Posts/Write/ Write/source/_posts
+          cd Write
+          yarn
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'Hoshino-Yumetsuki'
+          git config --global user.email 'hoshino-yumetsuki@outlook.com'
+
+      - name: Build and Deploy
+        run: |
+          cd Write
+          yarn build
+          yarn deploy
