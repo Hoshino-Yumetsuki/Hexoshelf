@@ -28,20 +28,32 @@ jobs:
       - name: Check modified paths
         id: check_paths
         run: |
+          echo "Changed files:"
+          git diff --name-only HEAD^ HEAD
+
           git diff --name-only HEAD^ HEAD > changed_files.txt
+
           echo "blog=false" >> $GITHUB_OUTPUT
           echo "legacy=false" >> $GITHUB_OUTPUT
           echo "write=false" >> $GITHUB_OUTPUT
 
-          if grep -q -E "^(Blog/|Posts/Blog/|.github/)" changed_files.txt; then
+          if grep -q -E "(^Blog/|^Posts/Blog/|^.github/)" changed_files.txt; then
+            echo "Found changes for blog"
             echo "blog=true" >> $GITHUB_OUTPUT
           fi
-          if grep -q -E "^(Blog-Legacy/|Posts/Blog/|.github/)" changed_files.txt; then
+
+          if grep -q -E "(^Blog-Legacy/|^Posts/Blog/|^.github/)" changed_files.txt; then
+            echo "Found changes for legacy blog"
             echo "legacy=true" >> $GITHUB_OUTPUT
           fi
-          if grep -q -E "^(Write/|Posts/Write/|.github/)" changed_files.txt; then
+
+          if grep -q -E "(^Write/|^Posts/Write/|^.github/)" changed_files.txt; then
+            echo "Found changes for write"
             echo "write=true" >> $GITHUB_OUTPUT
           fi
+
+          echo "Final outputs:"
+          cat $GITHUB_OUTPUT
 
   blog-build:
     needs: setup
