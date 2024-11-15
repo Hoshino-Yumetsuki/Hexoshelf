@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "谈谈「博客：遗章」",
+      "path": "Blog/谈谈「博客：遗章」.md"
+    },
+    {
+      "basename": "全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？",
+      "path": "Blog/全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？.md"
+    },
+    {
+      "basename": "要写点什么......吗？",
+      "path": "Blog/要写点什么......吗？.md"
+    },
+    {
+      "basename": "这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next",
+      "path": "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md"
+    },
+    {
       "basename": "Next魔改记录",
       "path": "Blog/Next魔改记录.md"
     },
@@ -29,16 +45,8 @@
       "path": "Blog/简爱中的女性意识.md"
     },
     {
-      "basename": "全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？",
-      "path": "Blog/全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？.md"
-    },
-    {
       "basename": "拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡",
       "path": "Blog/拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡.md"
-    },
-    {
-      "basename": "这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next",
-      "path": "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md"
     },
     {
       "basename": "2023年终总结",
@@ -47,10 +55,6 @@
     {
       "basename": "家里云折腾之路——如何把一台好好的浪潮NF5270M3玩坏",
       "path": "Blog/家里云折腾之路——如何把一台好好的浪潮NF5270M3玩坏.md"
-    },
-    {
-      "basename": "要写点什么......吗？",
-      "path": "Blog/要写点什么......吗？.md"
     },
     {
       "basename": "Fast-Phasr-Next",
