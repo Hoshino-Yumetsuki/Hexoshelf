@@ -27,9 +27,11 @@ jobs:
 
       - name: Check modified paths
         id: check_paths
+        shell: bash
         run: |
           echo "Changed files:"
-          git diff --name-only HEAD^ HEAD
+          git diff --name-only HEAD^ HEAD | tr -d '"' > changed_files.txt
+          cat changed_files.txt
 
           echo "blog=false" >> $GITHUB_OUTPUT
           echo "legacy=false" >> $GITHUB_OUTPUT
@@ -38,21 +40,23 @@ jobs:
           while IFS= read -r file; do
             echo "Checking file: $file"
 
-            if [[ $file == Blog/* ]] || [[ $file == Posts/Blog/* ]] || [[ $file == .github/* ]]; then
+            file=$(echo "$file" | tr -d '"')
+
+            if [[ "$file" =~ ^(Blog/|Posts/Blog/|\.github/) ]]; then
               echo "Found changes for blog"
               echo "blog=true" >> $GITHUB_OUTPUT
             fi
 
-            if [[ $file == Blog-Legacy/* ]] || [[ $file == Posts/Blog/* ]] || [[ $file == .github/* ]]; then
+            if [[ "$file" =~ ^(Blog-Legacy/|Posts/Blog/|\.github/) ]]; then
               echo "Found changes for legacy blog"
               echo "legacy=true" >> $GITHUB_OUTPUT
             fi
 
-            if [[ $file == Write/* ]] || [[ $file == Posts/Write/* ]] || [[ $file == .github/* ]]; then
+            if [[ "$file" =~ ^(Write/|Posts/Write/|\.github/) ]]; then
               echo "Found changes for write"
               echo "write=true" >> $GITHUB_OUTPUT
             fi
-          done < <(git diff --name-only HEAD^ HEAD)
+          done < changed_files.txt
 
           echo "Final outputs:"
           cat $GITHUB_OUTPUT
