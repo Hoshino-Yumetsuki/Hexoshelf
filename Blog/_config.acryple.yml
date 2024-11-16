@@ -866,9 +866,9 @@ css_prefix: true
 # # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  - <script src="https://cdn.cbd.int/js-calendar-converter@0.0.6/dist/js-calendar-converter.js"></script>
-  - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/mainColor/heoMainColor.css">
-  - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/js-heo/404/404.css">
+  - <script src="https://cdn.smartcis.cn/npm/js-calendar-converter@0.0.6/dist/js-calendar-converter.js"></script>
+  - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/js-heo/mainColor/heoMainColor.css">
+  - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/js-heo/404/404.css">
   - <link rel="stylesheet" type="text/css" href="/css/404page.css">
   - <script src="/live2d-widget/autoload.js"></script>
   - <link rel="stylesheet" href="/css/ariasakablog.css">
@@ -880,14 +880,14 @@ inject:
   - <style id="yjjs"></style>
   - <style id="themeColor"></style>
   - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
-  - <link rel="stylesheet" href="https://cdn.cbd.int/butterfly-card-history/css/main.css">
+  - <link rel="stylesheet" href="https://cdn.smartcis.cn/npm/butterfly-card-history/css/main.css">
   - <link rel="stylesheet" href="/css/commentBarrage.css">
   - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
-  - <link rel="stylesheet" type="text/css" href="https://cdn.cbd.int/node-snackbar/dist/snackbar.min.css" />
+  - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/node-snackbar/dist/snackbar.min.css" />
   - <script src="/swReg.js"></script>
   - <span id="fps"></span>
   - <style id="grays"></style>
-  - <script src="https://cdn.cbd.int/prefetch-page/dist/prefetch.js"></script>
+  - <script src="https://cdn.smartcis.cn/npm/prefetch-page/dist/prefetch.js"></script>
   - "<script>addEventListener('DOMContentLoaded', function () {prefetch({ threshold: 25, delay: 3000, limit: 10 ,customs: ['search.xml']})});requestIdleCallback(function () {prefetch({ threshold: 25, delay: 3000, limit: 10,customs: ['search.xml']})})</script>"
   bottom:
   - <script type="text/javascript" src="/js/fixbugpjax.js"></script>
@@ -895,17 +895,17 @@ inject:
   - <div class="aplayer no-destroy" data-id="7803928554" data-server="netease" data-type="playlist" data-listFolded="false" data-preload="metadata" data-theme="var(--lyx-theme)" data-fixed="true" data-autoplay="false" data-volume=0.1 style="z-index:514"> </div>
   - <script type="text/javascript" src="/js/aplayersave.js"></script>
   - <script type="text/javascript" src="/js/noie.js"></script>
-  - <script src="https://cdn.cbd.int/winbox/dist/winbox.bundle.min.js"></script>
-  - <script src="https://cdn.cbd.int/sweetalert2@8/dist/sweetalert2.all.js"></script>
+  - <script src="https://cdn.smartcis.cn/npm/winbox/dist/winbox.bundle.min.js"></script>
+  - <script src="https://cdn.smartcis.cn/npm/sweetalert2@8/dist/sweetalert2.all.js"></script>
   - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
   - <script type="text/javascript" src="/js/copy.js"></script>
   - <script type="text/javascript" src="/js/welcome.js"></script>
-  - <script type="text/javascript" src="https://cdn.cbd.int/jquery/dist/jquery.min.js"></script>
+  - <script type="text/javascript" src="https://cdn.smartcis.cn/npm/jquery/dist/jquery.min.js"></script>
   - <script type="text/javascript" src="/js/resizeTop.js"></script>
   - <script type="text/javascript" src="/js/languages.js"></script>
   - <script type="text/javascript" src="/js/browser.js"></script>
   - <script type="text/javascript" src="/js/smooth-scrolling.js"></script>
-  - <script src="https://cdn.cbd.int/pace@0.0.4/pace.js"></script>
+  - <script src="https://cdn.smartcis.cn/npm/pace@0.0.4/pace.js"></script>
   - <script type="text/javascript" src="/js/sitetime.js"></script>
   - <script data-pjax="" type="text/javascript" src="/js/heimu.js"></script>
   - <script data-pjax="" src="/js/fps.js"></script>
@@ -914,7 +914,7 @@ inject:
   - <script src="/js/owo.js"></script>
   - <script src="/js/welcomeconsole.js"></script>
   - <script src="/js/hide.show.js"></script>
-  - <script data-pace-options='{ "restartOnRequestAfter":false,"eventLag":false}' src="https://cdn.cbd.int/pace@0.0.4/pace.js"></script>
+  - <script data-pace-options='{ "restartOnRequestAfter":false,"eventLag":false}' src="https://cdn.smartcis.cn/npm/pace@0.0.4/pace.js"></script>
   - <script data-pjax="" src="/js/baiduhistory.js"></script>
   - <script src="/js/random.js"></script>
   - <script src="/js/lunar.js"></script>
@@ -925,7 +925,7 @@ inject:
   - <script type="text/javascript" src="/js/commentsCount.js"></script>
   - <script type="text/javascript" src="/js/latest.js"></script>
   - <script data-pjax="" defer src="/js/fixed_card_widget.js"></script>
-  - <script type="text/javascript" src="https://cdn.cbd.int/node-snackbar@0/src/js/snackbar.js"></script>
+  - <script type="text/javascript" src="https://cdn.smartcis.cn/npm/node-snackbar@0/src/js/snackbar.js"></script>
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
 #
@@ -940,56 +940,56 @@ CDN:
   third_party_provider: jsdelivr
   option:
     # main_css: /css/index.css
-    main: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/main.js
-    utils: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/utils.js
-    translate: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/tw_cn.js
-    local_search: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/search/local-search.js
-    algolia_js: https://cdn.cbd.int/hexo-theme-butterfly@4.2.2/source/js/search/algolia.js
-    algolia_search_v4: https://cdn.cbd.int/algoliasearch@4/dist/algoliasearch-lite.umd.js
-    instantsearch_v4: https://cdn.cbd.int/instantsearch.js@4/dist/instantsearch.production.min.js
-    pjax: https://cdn.cbd.int/pjax/pjax.min.js
-    gitalk: https://cdn.cbd.int/gitalk/dist/gitalk.js
-    gitalk_css: https://cdn.cbd.int/gitalk/dist/gitalk.css
-    blueimp_md5: https://cdn.cbd.int/blueimp-md5/js/md5.min.js
-    valine: https://cdn.cbd.int/valine/dist/Valine.min.js
-    disqusjs: https://cdn.cbd.int/disqusjs@1/dist/disqus.js
-    disqusjs_css: https://cdn.cbd.int/disqusjs@1/dist/disqusjs.css
-    twikoo: https://cdn.cbd.int/twikoo/dist/twikoo.min.js
-    waline_js: https://cdn.cbd.int/@waline/client/dist/waline.js
-    waline_css: https://cdn.cbd.int/@waline/client/dist/waline.css
-    sharejs: https://cdn.cbd.int/dist/js/social-share.min.js
-    sharejs_css: https://cdn.cbd.int/social-share.js/dist/css/share.min.css
-    mathjax: https://cdn.cbd.int/mathjax@3/es5/tex-mml-chtml.js
-    katex: https://cdn.cbd.int/katex/dist/katex.min.css
-    katex_copytex: https://cdn.cbd.int/katex/dist/contrib/copy-tex.min.js
+    main: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/main.js
+    utils: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/utils.js
+    translate: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/tw_cn.js
+    local_search: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/search/local-search.js
+    algolia_js: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/search/algolia.js
+    algolia_search_v4: https://cdn.smartcis.cn/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js
+    instantsearch_v4: https://cdn.smartcis.cn/npm/instantsearch.js@4/dist/instantsearch.production.min.js
+    pjax: https://cdn.smartcis.cn/npm/pjax/pjax.min.js
+    gitalk: https://cdn.smartcis.cn/npm/gitalk/dist/gitalk.js
+    gitalk_css: https://cdn.smartcis.cn/npm/gitalk/dist/gitalk.css
+    blueimp_md5: https://cdn.smartcis.cn/npm/blueimp-md5/js/md5.min.js
+    valine: https://cdn.smartcis.cn/npm/valine/dist/Valine.min.js
+    disqusjs: https://cdn.smartcis.cn/npm/disqusjs@1/dist/disqus.js
+    disqusjs_css: https://cdn.smartcis.cn/npm/disqusjs@1/dist/disqusjs.css
+    twikoo: https://cdn.smartcis.cn/npm/twikoo/dist/twikoo.min.js
+    waline_js: https://cdn.smartcis.cn/npm/@waline/client/dist/waline.js
+    waline_css: https://cdn.smartcis.cn/npm/@waline/client/dist/waline.css
+    sharejs: https://cdn.smartcis.cn/npm/dist/js/social-share.min.js
+    sharejs_css: https://cdn.smartcis.cn/npm/social-share.js/dist/css/share.min.css
+    mathjax: https://cdn.smartcis.cn/npm/mathjax@3/es5/tex-mml-chtml.js
+    katex: https://cdn.smartcis.cn/npm/katex/dist/katex.min.css
+    katex_copytex: https://cdn.smartcis.cn/npm/katex/dist/contrib/copy-tex.min.js
     # katex_copytex_css:
-    mermaid: https://cdn.cbd.int/mermaid/dist/mermaid.min.js
-    canvas_ribbon: https://cdn.cbd.int/butterfly-extsrc@1/dist/canvas-ribbon.min.js
-    canvas_fluttering_ribbon: https://cdn.cbd.int/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
-    canvas_nest: https://cdn.cbd.int/butterfly-extsrc@1/dist/canvas-nest.min.js
-    activate_power_mode: https://cdn.cbd.int/butterfly-extsrc@1/dist/activate-power-mode.min.js
-    fireworks: https://cdn.cbd.int/butterfly-extsrc@1/dist/fireworks.min.js
-    click_heart: https://cdn.cbd.int/butterfly-extsrc@1/dist/click-heart.min.js
-    ClickShowText: https://cdn.cbd.int/butterfly-extsrc@1/dist/click-show-text.min.js
-    lazyload: https://cdn.cbd.int/vanilla-lazyload/dist/lazyload.iife.min.js
-    instantpage: https://cdn.cbd.int/instant.page@5/instantpage.js
-    typed: https://cdn.cbd.int/typed.js/dist/typed.umd.js
-    pangu: https://cdn.cbd.int/pangu@4/dist/browser/pangu.min.js
-    fancybox_css_v4: https://cdn.cbd.int/@fancyapps/ui/dist/fancybox/fancybox.css
-    fancybox_v4: https://cdn.cbd.int/@fancyapps/ui/dist/fancybox/fancybox.umd.js
-    medium_zoom: https://cdn.cbd.int/medium-zoom/dist/medium-zoom.min.js
-    snackbar_css: https://cdn.cbd.int/node-snackbar/dist/snackbar.min.css
-    snackbar: https://cdn.cbd.int/node-snackbar/dist/snackbar.min.js
-    fontawesomeV6: https://cdn.cbd.int/@fortawesome/fontawesome-free@6/css/all.min.css
-    flickr_justified_gallery_js: https://cdn.cbd.int/flickr-justified-gallery@2/dist/fjGallery.min.js
-    flickr_justified_gallery_css: https://cdn.cbd.int/flickr-justified-gallery@2/dist/fjGallery.css
-    aplayer_css: https://cdn.cbd.int/aplayer@1/dist/APlayer.min.css
-    aplayer_js: https://cdn.cbd.int/aplayer@1/dist/APlayer.min.js
+    mermaid: https://cdn.smartcis.cn/npm/mermaid/dist/mermaid.min.js
+    canvas_ribbon: https://cdn.smartcis.cn/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js
+    canvas_fluttering_ribbon: https://cdn.smartcis.cn/npm/butterfly-extsrc@1/dist/canvas-fluttering-ribbon.min.js
+    canvas_nest: https://cdn.smartcis.cn/npm/butterfly-extsrc@1/dist/canvas-nest.min.js
+    activate_power_mode: https://cdn.smartcis.cn/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js
+    fireworks: https://cdn.smartcis.cn/npm/butterfly-extsrc@1/dist/fireworks.min.js
+    click_heart: https://cdn.smartcis.cn/npm/butterfly-extsrc@1/dist/click-heart.min.js
+    ClickShowText: https://cdn.smartcis.cn/npm/butterfly-extsrc@1/dist/click-show-text.min.js
+    lazyload: https://cdn.smartcis.cn/npm/vanilla-lazyload/dist/lazyload.iife.min.js
+    instantpage: https://cdn.smartcis.cn/npm/instant.page@5/instantpage.js
+    typed: https://cdn.smartcis.cn/npm/typed.js/dist/typed.umd.js
+    pangu: https://cdn.smartcis.cn/npm/pangu@4/dist/browser/pangu.min.js
+    fancybox_css_v4: https://cdn.smartcis.cn/npm/@fancyapps/ui/dist/fancybox/fancybox.css
+    fancybox_v4: https://cdn.smartcis.cn/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js
+    medium_zoom: https://cdn.smartcis.cn/npm/medium-zoom/dist/medium-zoom.min.js
+    snackbar_css: https://cdn.smartcis.cn/npm/node-snackbar/dist/snackbar.min.css
+    snackbar: https://cdn.smartcis.cn/npm/node-snackbar/dist/snackbar.min.js
+    fontawesomeV6: https://cdn.smartcis.cn/npm/@fortawesome/fontawesome-free@6/css/all.min.css
+    flickr_justified_gallery_js: https://cdn.smartcis.cn/npm/flickr-justified-gallery@2/dist/fjGallery.min.js
+    flickr_justified_gallery_css: https://cdn.smartcis.cn/npm/flickr-justified-gallery@2/dist/fjGallery.css
+    aplayer_css: https://cdn.smartcis.cn/npm/aplayer@1/dist/APlayer.min.css
+    aplayer_js: https://cdn.smartcis.cn/npm/aplayer@1/dist/APlayer.min.js
     meting_js: /js/meting.js
-    prismjs_js: https://cdn.cbd.int/prismjs@1/prism.js
-    prismjs_lineNumber_js: https://cdn.cbd.int/prismjs@1/plugins/line-numbers/prism-line-numbers.min.js
-    prismjs_autoloader: https://cdn.cbd.int/prismjs@1/plugins/autoloader/prism-autoloader.min.js
-    vue: https://cdn.cbd.int/vue@2/dist/vue.min.js
+    prismjs_js: https://cdn.smartcis.cn/npm/prismjs@1/prism.js
+    prismjs_lineNumber_js: https://cdn.smartcis.cn/npm/prismjs@1/plugins/line-numbers/prism-line-numbers.min.js
+    prismjs_autoloader: https://cdn.smartcis.cn/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js
+    vue: https://cdn.smartcis.cn/npm/vue@2/dist/vue.min.js
     countup_js: /js/countup.js
 # hexo-butterfly-categories-card
 # see https://akilar.top/posts/a9131002/
@@ -1023,12 +1023,12 @@ tag_plugins:
   link:
     placeholder: /img/link.png #link_card标签默认的图标图片
   CDN:
-    anima: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://cdn.cbd.int/jquery/dist/jquery.min.js #issues标签依赖
-    issues: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js #issues标签依赖
+    anima: https://cdn.smartcis.cn/npm/hexo-butterfly-tag-plugins-plus/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
+    jquery: https://cdn.smartcis.cn/npm/jquery/dist/jquery.min.js #issues标签依赖
+    issues: https://cdn.smartcis.cn/npm/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js #issues标签依赖
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参https://akilar.top/posts/d2ebecef/
-    carousel: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js
-    tag_plugins_css: https://cdn.cbd.int/hexo-butterfly-tag-plugins-plus/lib/tag_plugins.css
+    carousel: https://cdn.smartcis.cn/npm/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js
+    tag_plugins_css: https://cdn.smartcis.cn/npm/hexo-butterfly-tag-plugins-plus/lib/tag_plugins.css
 #侧栏悬浮卡片控制按钮
 #https://akilar.top/posts/451ac5f8/
 fixed_card_widget:
@@ -1123,5 +1123,5 @@ gitcalendar:
   color: "['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c']" #天青色调
   apiurl: gcapi.yumetsuki.moe
   # api: https://python-gitee-calendar-api.vercel.app/api
-  # calendar_js: https://cdn.cbd.int/reverse-stu-allversions/butterfly/diy/hexo_githubcalendar.js
+  # calendar_js: https://cdn.smartcis.cn/npm/reverse-stu-allversions/butterfly/diy/hexo_githubcalendar.js
   # plus_style: ""

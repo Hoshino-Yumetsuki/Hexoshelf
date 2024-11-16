@@ -33,7 +33,7 @@ function tohist() {
                 getDate = String(getDate);
             }
             var getMonthDate = "S" + getMonth + getDate;
-            return ["https://cdn.cbd.int/butterfly-card-history/json/" + getMonth + ".json", getMonthDate]
+            return ["https://cdn.smartcis.cn/npm/butterfly-card-history/json/" + getMonth + ".json", getMonthDate]
         }
         var history_data = history_get_data()
         fetch(history_data[0]).then(data => data.json()).then(data => {

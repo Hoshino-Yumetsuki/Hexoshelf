@@ -786,5 +786,5 @@
   ],
   "showSplashscreen": true,
   "autosaveInterval": 15000,
-  "mathjaxSourceURL": "https://cdn.cbd.int/mathjax@3.2.1/es5/tex-svg.js"
+  "mathjaxSourceURL": "https://cdn.smartcis.cn/npm/mathjax@3.2.1/es5/tex-svg.js"
 }
