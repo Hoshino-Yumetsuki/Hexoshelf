@@ -17,11 +17,9 @@
                 "type": "leaf",
                 "state": {
                   "type": "outline",
-                  "state": {
-                    "file": "Blog/谈谈「博客：遗章」.md"
-                  },
+                  "state": {},
                   "icon": "lucide-list",
-                  "title": "谈谈「博客：遗章」 的大纲"
+                  "title": "大纲"
                 }
               }
             ]
@@ -235,12 +233,12 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "68b5d606072abbee",
+  "active": "3a425da41c797839",
   "lastOpenFiles": [
+    "Blog/谈谈「博客：遗章」.md",
     "Blog/全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？.md",
     "Blog/要写点什么......吗？.md",
     "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md",
-    "Blog/谈谈「博客：遗章」.md",
     "Blog/Next魔改记录.md",
     "Write/梦溯镜影-C0-设定集.md",
     "Write/梦溯镜影-C1-被绑定的人生.md",

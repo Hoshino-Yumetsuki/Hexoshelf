@@ -106,7 +106,7 @@ const mirror = [
     // `https://registry.npmjs.org/ariasakablog/latest`,
     // `https://registry.npmmirror.com/q78kgblog/latest`,
     // `https://cdn.smartcis.cn/npm/q78kgblog`,
-    `https://mirrors.cloud.tencent.com/npm/q78kgblog/latest`
+    `https://registry.npmmirror.com/q78kgblog/latest`
 ]
 const get_newest_version = async (mirror) => {
     return lfetch(mirror, mirror[0])
