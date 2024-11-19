@@ -1,7 +1,7 @@
 {
   "hashLength": 8,
   "skipExisting": true,
-  "autoGenerate": true,
+  "autoGenerate": false,
   "useRandomMode": false,
   "checkCollision": true
 }

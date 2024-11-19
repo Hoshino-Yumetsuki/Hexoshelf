@@ -37,7 +37,7 @@
                   "type": "mindmap",
                   "state": {},
                   "icon": "dot-network",
-                  "title": "Mind Map of 要写点什么......吗？"
+                  "title": "Mind Map"
                 }
               }
             ]
@@ -107,6 +107,16 @@
               "icon": "lucide-search",
               "title": "搜索"
             }
+          },
+          {
+            "id": "554aeafae1d4b7e3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
           }
         ]
       },
@@ -151,6 +161,33 @@
               "icon": "lucide-git-fork",
               "title": "关系图谱"
             }
+          },
+          {
+            "id": "b4e3297da13808bf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "4008c7d115660774",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
           }
         ]
       },
@@ -179,7 +216,6 @@
     "hiddenItems": {
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "abbrlink:Generate Abbrlinks": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "canvas:新建白板": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
