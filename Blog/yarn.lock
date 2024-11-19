@@ -2621,7 +2621,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.0.0, chokidar@npm:^3.5.3":
+"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -5560,16 +5560,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-abbrlink@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "hexo-abbrlink@npm:2.2.1"
-  dependencies:
-    hexo-front-matter: "npm:^1.0.0"
-    hexo-fs: "npm:^3.1.0"
-  checksum: 10c0/80b39cf7832edbcad333457fd6db2445d7b521e0def297b26bd1e4f8273a8f444be5c313f9d55f2e393b6d18ee7a57dcde1c1b246eb2a68d6b2c7071707b4bd1
-  languageName: node
-  linkType: hard
-
 "hexo-bilibili-bangumi@npm:^1.8.9":
   version: 1.8.9
   resolution: "hexo-bilibili-bangumi@npm:1.8.9"
@@ -5775,15 +5765,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-front-matter@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "hexo-front-matter@npm:1.0.0"
-  dependencies:
-    js-yaml: "npm:^3.13.1"
-  checksum: 10c0/1e4b52dbc7f9046f208353de2a61337fbf440794e459af1aebcf2ff5f48c1f746213a18496363d9d4796fa4a9eea97dcdc15b451ae3f557e8cbc0160e79c4de2
-  languageName: node
-  linkType: hard
-
 "hexo-front-matter@npm:^4.2.1":
   version: 4.2.1
   resolution: "hexo-front-matter@npm:4.2.1"
@@ -5814,18 +5795,6 @@ __metadata:
     escape-string-regexp: "npm:^1.0.5"
     graceful-fs: "npm:^4.1.11"
   checksum: 10c0/ba44f8d3eed03ee0b1f1e84805b3d1dc2861fd4d1063fd1a06c9b54ecd2ff6d1d34593178e2cfd7850706dd104e59d6868b2b860b379a8a0cadf2df671702e7e
-  languageName: node
-  linkType: hard
-
-"hexo-fs@npm:^3.1.0":
-  version: 3.1.0
-  resolution: "hexo-fs@npm:3.1.0"
-  dependencies:
-    bluebird: "npm:^3.5.1"
-    chokidar: "npm:^3.0.0"
-    graceful-fs: "npm:^4.1.11"
-    hexo-util: "npm:^2.0.0"
-  checksum: 10c0/a5e8c155b28962541c53017b8aaf490f59bec6be177ef540ca446ff50872fe32d7daeeb6f1d18b378b66e25a1395381c366329299c743be360861cd4db250321
   languageName: node
   linkType: hard
 
@@ -6163,7 +6132,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-util@npm:^2.0.0, hexo-util@npm:^2.1.0, hexo-util@npm:^2.5.0, hexo-util@npm:^2.7.0":
+"hexo-util@npm:^2.1.0, hexo-util@npm:^2.5.0, hexo-util@npm:^2.7.0":
   version: 2.7.0
   resolution: "hexo-util@npm:2.7.0"
   dependencies:
@@ -7283,7 +7252,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-yaml@npm:^3.12.0, js-yaml@npm:^3.13.1, js-yaml@npm:^3.6.1":
+"js-yaml@npm:^3.12.0, js-yaml@npm:^3.6.1":
   version: 3.14.1
   resolution: "js-yaml@npm:3.14.1"
   dependencies:
@@ -9885,7 +9854,6 @@ __metadata:
     editor.md: "npm:^1.5.0"
     esbuild-hexo-minifier: "npm:^0.1.7"
     hexo: "npm:^7.0.0"
-    hexo-abbrlink: "npm:^2.2.1"
     hexo-bilibili-bangumi: "npm:^1.8.9"
     hexo-butterfly-article-double-row: "npm:^1.0.2"
     hexo-butterfly-envelope: "npm:^1.0.15"

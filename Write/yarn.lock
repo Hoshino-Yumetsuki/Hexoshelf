@@ -272,15 +272,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"argparse@npm:^1.0.7":
-  version: 1.0.10
-  resolution: "argparse@npm:1.0.10"
-  dependencies:
-    sprintf-js: "npm:~1.0.2"
-  checksum: 10c0/b2972c5c23c63df66bca144dbc65d180efa74f25f8fd9b7d9a0a6c88ae839db32df3d54770dcb6460cf840d232b60695d1a6b1053f599d84e73f7437087712de
-  languageName: node
-  linkType: hard
-
 "argparse@npm:^2.0.1":
   version: 2.0.1
   resolution: "argparse@npm:2.0.1"
@@ -1205,7 +1196,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esprima@npm:^4.0.0, esprima@npm:^4.0.1":
+"esprima@npm:^4.0.1":
   version: 4.0.1
   resolution: "esprima@npm:4.0.1"
   bin:
@@ -1713,16 +1704,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-abbrlink@npm:^2.2.1":
-  version: 2.2.1
-  resolution: "hexo-abbrlink@npm:2.2.1"
-  dependencies:
-    hexo-front-matter: "npm:^1.0.0"
-    hexo-fs: "npm:^3.1.0"
-  checksum: 10c0/80b39cf7832edbcad333457fd6db2445d7b521e0def297b26bd1e4f8273a8f444be5c313f9d55f2e393b6d18ee7a57dcde1c1b246eb2a68d6b2c7071707b4bd1
-  languageName: node
-  linkType: hard
-
 "hexo-cli@npm:^4.3.0":
   version: 4.3.1
   resolution: "hexo-cli@npm:4.3.1"
@@ -1754,15 +1735,6 @@ __metadata:
     nunjucks: "npm:^3.2.3"
     picocolors: "npm:^1.0.0"
   checksum: 10c0/9b3d3fa411a757316e61702affef2cb60839be76098443ec619f09908cfc3090c0ca0ffd33ebd04a1d60d41590bc9f2c7fb78c0cbc01ad4b75c6a44013d82632
-  languageName: node
-  linkType: hard
-
-"hexo-front-matter@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "hexo-front-matter@npm:1.0.0"
-  dependencies:
-    js-yaml: "npm:^3.13.1"
-  checksum: 10c0/1e4b52dbc7f9046f208353de2a61337fbf440794e459af1aebcf2ff5f48c1f746213a18496363d9d4796fa4a9eea97dcdc15b451ae3f557e8cbc0160e79c4de2
   languageName: node
   linkType: hard
 
@@ -2543,18 +2515,6 @@ __metadata:
   peerDependencies:
     js-yaml: 4.x
   checksum: 10c0/485d0065aa1aa8919dc39a58ea7057bae2d666125ce4a345c59415e87d5765e7be7da4b444e14e57a8dbf3c20d1df6407e12ae65852dad9b165caf2f779ae35e
-  languageName: node
-  linkType: hard
-
-"js-yaml@npm:^3.13.1":
-  version: 3.14.1
-  resolution: "js-yaml@npm:3.14.1"
-  dependencies:
-    argparse: "npm:^1.0.7"
-    esprima: "npm:^4.0.0"
-  bin:
-    js-yaml: bin/js-yaml.js
-  checksum: 10c0/6746baaaeac312c4db8e75fa22331d9a04cccb7792d126ed8ce6a0bbcfef0cedaddd0c5098fade53db067c09fe00aa1c957674b4765610a8b06a5a189e46433b
   languageName: node
   linkType: hard
 
@@ -3587,7 +3547,6 @@ __metadata:
   resolution: "q78kg-blog-write@workspace:."
   dependencies:
     hexo: "npm:^6.3.0"
-    hexo-abbrlink: "npm:^2.2.1"
     hexo-deployer-git: "npm:^4.0.0"
     hexo-generator-archive: "npm:^2.0.0"
     hexo-generator-category-enhance: "npm:^0.1.6"
@@ -4053,13 +4012,6 @@ __metadata:
   version: 1.1.3
   resolution: "sprintf-js@npm:1.1.3"
   checksum: 10c0/09270dc4f30d479e666aee820eacd9e464215cdff53848b443964202bf4051490538e5dd1b42e1a65cf7296916ca17640aebf63dae9812749c7542ee5f288dec
-  languageName: node
-  linkType: hard
-
-"sprintf-js@npm:~1.0.2":
-  version: 1.0.3
-  resolution: "sprintf-js@npm:1.0.3"
-  checksum: 10c0/ecadcfe4c771890140da5023d43e190b7566d9cf8b2d238600f31bec0fc653f328da4450eb04bd59a431771a8e9cc0e118f0aa3974b683a4981b4e07abc2a5bb
   languageName: node
   linkType: hard
 
