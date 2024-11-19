@@ -1,64 +1,64 @@
 {
   "recentFiles": [
     {
-      "basename": "谈谈「博客：遗章」",
-      "path": "Blog/谈谈「博客：遗章」.md"
-    },
-    {
-      "basename": "全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？",
-      "path": "Blog/全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？.md"
-    },
-    {
       "basename": "要写点什么......吗？",
-      "path": "Blog/要写点什么......吗？.md"
-    },
-    {
-      "basename": "这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next",
-      "path": "Blog/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md"
-    },
-    {
-      "basename": "Next魔改记录",
-      "path": "Blog/Next魔改记录.md"
-    },
-    {
-      "basename": "梦溯镜影-C0-设定集",
-      "path": "Write/梦溯镜影-C0-设定集.md"
-    },
-    {
-      "basename": "梦溯镜影-C1-被绑定的人生",
-      "path": "Write/梦溯镜影-C1-被绑定的人生.md"
-    },
-    {
-      "basename": "梦溯镜影-C2-樱花树下的契约",
-      "path": "Write/梦溯镜影-C2-樱花树下的契约.md"
-    },
-    {
-      "basename": "圣所往事",
-      "path": "Write/圣所往事.md"
-    },
-    {
-      "basename": "谷歌娘每日金句收集",
-      "path": "Blog/谷歌娘每日金句收集.md"
-    },
-    {
-      "basename": "简爱中的女性意识",
-      "path": "Blog/简爱中的女性意识.md"
-    },
-    {
-      "basename": "拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡",
-      "path": "Blog/拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡.md"
+      "path": "Blog/2024/要写点什么......吗？.md"
     },
     {
       "basename": "2023年终总结",
-      "path": "Blog/2023年终总结.md"
+      "path": "Blog/2024/2023年终总结.md"
+    },
+    {
+      "basename": "谷歌娘每日金句收集",
+      "path": "Blog/2023/谷歌娘每日金句收集.md"
+    },
+    {
+      "basename": "谈谈「博客：遗章」",
+      "path": "Blog/2024/谈谈「博客：遗章」.md"
     },
     {
       "basename": "家里云折腾之路——如何把一台好好的浪潮NF5270M3玩坏",
-      "path": "Blog/家里云折腾之路——如何把一台好好的浪潮NF5270M3玩坏.md"
+      "path": "Blog/2024/家里云折腾之路——如何把一台好好的浪潮NF5270M3玩坏.md"
+    },
+    {
+      "basename": "简爱中的女性意识",
+      "path": "Blog/2023/简爱中的女性意识.md"
+    },
+    {
+      "basename": "全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？",
+      "path": "Blog/2023/全国首款支持多环境开发的 CEC-IDE，卡脖子问题解决，国产崛起了？.md"
+    },
+    {
+      "basename": "Next魔改记录",
+      "path": "Blog/2023/Next魔改记录.md"
+    },
+    {
+      "basename": "拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡",
+      "path": "Blog/2023/拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡.md"
+    },
+    {
+      "basename": "这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next",
+      "path": "Blog/2023/这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next.md"
+    },
+    {
+      "basename": "梦溯镜影-C0-设定集",
+      "path": "Write/梦溯镜影/梦溯镜影-C0-设定集.md"
+    },
+    {
+      "basename": "梦溯镜影-C1-被绑定的人生",
+      "path": "Write/梦溯镜影/梦溯镜影-C1-被绑定的人生.md"
+    },
+    {
+      "basename": "梦溯镜影-C2-樱花树下的契约",
+      "path": "Write/梦溯镜影/梦溯镜影-C2-樱花树下的契约.md"
+    },
+    {
+      "basename": "圣所往事",
+      "path": "Write/杂文/圣所往事.md"
     },
     {
       "basename": "Fast-Phasr-Next",
-      "path": "Blog/canvas/Fast-Phasr-Next.canvas"
+      "path": "Canvas/Fast-Phasr-Next.canvas"
     },
     {
       "basename": "2023年终总结",

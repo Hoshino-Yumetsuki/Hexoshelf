@@ -1,6 +1,6 @@
 ---
 title: 拯救流量爆炸的 Vercel——使用Cloudflare Workers做负载均衡
-categories: 闲聊杂谈
+categories: 技术分享
 tags:
   - Cloudflare
   - Hexo
