@@ -900,7 +900,7 @@ inject:
   - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
   - <script type="text/javascript" src="/js/copy.js"></script>
   - <script type="text/javascript" src="/js/welcome.js"></script>
-  - <script type="text/javascript" src="https://cdn.smartcis.cn/npm/jquery/dist/jquery.min.js"></script>
+  - <script type="text/javascript" src="hhttps://cdn.smartcis.cn/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   - <script type="text/javascript" src="/js/resizeTop.js"></script>
   - <script type="text/javascript" src="/js/languages.js"></script>
   - <script type="text/javascript" src="/js/browser.js"></script>
