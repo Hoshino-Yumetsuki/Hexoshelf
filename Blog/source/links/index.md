@@ -199,7 +199,7 @@ type: "links"
 
 点下面的按钮！
 
-<script type="text/javascript" src="https://cdn.smartcis.cn/npm/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.smartcis.cn/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <script src = "/js/randomFriend.js"></script>
 
 <a href="javascript:void(0)" onclick="addflink()">快速添加友链</a>

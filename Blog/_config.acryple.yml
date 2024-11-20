@@ -900,7 +900,7 @@ inject:
   - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
   - <script type="text/javascript" src="/js/copy.js"></script>
   - <script type="text/javascript" src="/js/welcome.js"></script>
-  - <script type="text/javascript" src="hhttps://cdn.smartcis.cn/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+  - <script type="text/javascript" src="https://cdn.smartcis.cn/npm/jquery@3.6.4/dist/jquery.min.js"></script>
   - <script type="text/javascript" src="/js/resizeTop.js"></script>
   - <script type="text/javascript" src="/js/languages.js"></script>
   - <script type="text/javascript" src="/js/browser.js"></script>
@@ -1024,7 +1024,7 @@ tag_plugins:
     placeholder: /img/link.png #link_card标签默认的图标图片
   CDN:
     anima: https://cdn.smartcis.cn/npm/hexo-butterfly-tag-plugins-plus/lib/assets/font-awesome-animation.min.css #动画标签anima的依赖
-    jquery: https://cdn.smartcis.cn/npm/jquery/dist/jquery.min.js #issues标签依赖
+    jquery: https://cdn.smartcis.cn/npm/jquery@3.6.4/dist/jquery.min.js #issues标签依赖
     issues: https://cdn.smartcis.cn/npm/hexo-butterfly-tag-plugins-plus/lib/assets/issues.js #issues标签依赖
     iconfont: //at.alicdn.com/t/font_2032782_8d5kxvn09md.js #参https://akilar.top/posts/d2ebecef/
     carousel: https://cdn.smartcis.cn/npm/hexo-butterfly-tag-plugins-plus/lib/assets/carousel-touch.js
