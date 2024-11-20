@@ -37,7 +37,7 @@
                   "type": "mindmap",
                   "state": {},
                   "icon": "dot-network",
-                  "title": "Mind Map"
+                  "title": "Mind Map of 梦溯镜影-C0-设定集"
                 }
               }
             ]
@@ -220,16 +220,17 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false
+      "workspaces:管理工作区布局": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
   "active": "13ddd6c331c083fc",
   "lastOpenFiles": [
-    "Write/梦溯镜影/梦溯镜影-C1-被绑定的人生.md",
+    "未命名.md",
     "Write/梦溯镜影/梦溯镜影-C0-设定集.md",
+    "Write/梦溯镜影/梦溯镜影-C1-被绑定的人生.md",
     "Write/杂文/圣所往事.md",
     "未命名 1.md",
-    "未命名.md",
     "Blog/2024/要写点什么......吗？.md",
     "Blog/2023/简爱中的女性意识.md",
     "Blog/2023/拯救流量爆炸的 Vercel——使用 Cloudflare Workers 做负载均衡.md",
