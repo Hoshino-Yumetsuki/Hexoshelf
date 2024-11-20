@@ -37,7 +37,7 @@
                   "type": "mindmap",
                   "state": {},
                   "icon": "dot-network",
-                  "title": "Mind Map of Obsidian 插件：Abbrlink——让你的编辑器和博客融合得更紧密"
+                  "title": "Mind Map"
                 }
               }
             ]
@@ -236,8 +236,7 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "workspaces:管理工作区布局": false
     }
   },
   "active": "19d5b65fdf9f1fee",
