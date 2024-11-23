@@ -3,5 +3,7 @@
   "skipExisting": true,
   "autoGenerate": false,
   "useRandomMode": false,
-  "checkCollision": true
+  "checkCollision": true,
+  "maxCollisionChecks": 3,
+  "overrideDifferentLength": false
 }
