@@ -9,4 +9,10 @@ _multiconfig.yml
 package-lock.json
 .vscode/*
 
+.pnp.*
 .yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
