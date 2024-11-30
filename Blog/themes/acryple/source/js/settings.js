@@ -2,6 +2,7 @@ document.addEventListener('pjax:complete', tosetting);
 document.addEventListener('DOMContentLoaded', tosetting);
 function tosetting() {
     $("#settingWindow").hide();
+    let blur;
     if (localStorage.getItem("blur") == "false") {
         blur = 0;
     } else {
@@ -133,11 +134,19 @@ function tosetting() {
     // 如果flag为0则存储,即设置背景. 为1则不存储,即每次加载自动读取背景.
     changeBg = function (s, flag) {
         let bg = document.getElementById('web_bg')
-        if (s.charAt(0) == '#') {
+        // 设置默认背景为none
+        if (!s || s === '') {
+            bg.style.backgroundColor = ''
+            bg.style.backgroundImage = 'none'
+        }
+        // 处理其他背景设置
+        else if (s.charAt(0) == '#') {
             bg.style.backgroundColor = s
             bg.style.backgroundImage = 'none'
-        } else bg.style.backgroundImage = s
-        if (!flag) { saveData('blogbg', s) }
+        } else {
+            bg.style.backgroundImage = s
+        }
+        if (!flag) { saveData('blogbg', s || '') }
     }
     // 上面两个函数如果你有其他需要存取数据的功能，也可以直接使用
 
