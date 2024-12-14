@@ -975,8 +975,8 @@ CDN:
     instantpage: https://cdn.smartcis.cn/npm/instant.page@5/instantpage.js
     typed: https://cdn.smartcis.cn/npm/typed.js/dist/typed.umd.js
     pangu: https://cdn.smartcis.cn/npm/pangu@4/dist/browser/pangu.min.js
-    fancybox_css_v4: https://cdn.smartcis.cn/npm/@fancyapps/ui/dist/fancybox/fancybox.css
-    fancybox_v4: https://cdn.smartcis.cn/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js
+    fancybox_css_v4: https://cdn.smartcis.cn/npm/@fancyapps/ui@4.0.31/dist/fancybox.css
+    fancybox_v4: https://cdn.smartcis.cn/npm/@fancyapps/ui@4.0.31/dist/fancybox.umd.js
     medium_zoom: https://cdn.smartcis.cn/npm/medium-zoom/dist/medium-zoom.min.js
     snackbar_css: https://cdn.smartcis.cn/npm/node-snackbar/dist/snackbar.min.css
     snackbar: https://cdn.smartcis.cn/npm/node-snackbar/dist/snackbar.min.js
