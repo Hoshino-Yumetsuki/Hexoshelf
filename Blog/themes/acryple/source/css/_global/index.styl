@@ -35,6 +35,7 @@
   --scrollbar-color: $scrollbar-color
 
 body
+  overflow: hidden !important
   position: relative
   min-height: 100%
   background: var(--global-bg)
@@ -59,9 +60,9 @@ body
   background-color: transparent
 
 // scrollbar - firefox
-*
-  scrollbar-width: thin
-  scrollbar-color: var(--scrollbar-color) transparent
+// *
+//   scrollbar-width: thin
+//   scrollbar-color: var(--scrollbar-color) transparent
 
 input::placeholder
   color: var(--font-color)
