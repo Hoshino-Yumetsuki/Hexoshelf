@@ -9,6 +9,8 @@ _multiconfig.yml
 package-lock.json
 .vscode/*
 
+**/_posts
+
 **/.pnp.*
 **/.yarn/*
 !**/.yarn/patches
