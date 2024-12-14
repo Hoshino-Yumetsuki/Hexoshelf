@@ -12,6 +12,7 @@
     "version": "7.0.0"
   },
   "devDependencies": {
+    "esbuild-hexo-minifier": "^0.1.7",
     "hexo": "7.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
