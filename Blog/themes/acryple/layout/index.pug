@@ -15,11 +15,16 @@ block content
         })
         window.addEventListener('load',function(){document.querySelector('.category-list .category-list-item.checked').scrollIntoView();document.querySelector('#category').scrollIntoView();});
         window.addEventListener('pjax:complete',function(){document.querySelector('.category-list .category-list-item.checked').scrollIntoView();document.querySelector('#category').scrollIntoView();});
-        document.querySelectorAll('#category .lists')[0].onmousewheel = function(e){
-        if(e.deltaY>0){
-        this.scrollLeft+=20;
-        }else{
-        this.scrollLeft-=20;
-        }return false;}
+        const categoryList = document.querySelector('.category-list-bar .lists');
+        if (categoryList) {
+          categoryList.addEventListener('wheel', function(e) {
+            e.preventDefault();
+            if (e.deltaY > 0) {
+              this.scrollLeft += 20;
+            } else {
+              this.scrollLeft -= 20;
+            }
+          });
+        }
     +postUI
     include includes/pagination.pug

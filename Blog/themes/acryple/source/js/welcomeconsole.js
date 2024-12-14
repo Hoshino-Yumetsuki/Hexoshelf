@@ -15,9 +15,14 @@
 //     如果有功能喜欢的欢迎扒走，Github上面也已开源。
 //     速度有点慢请见谅`)
 //     }, 500);
-document.querySelector('.home .category-list').onmousewheel = function(e){
-    if(e.deltaY>=0){
-    this.scrollLeft+=20;
-    }else{
-    this.scrollLeft-=20;
-    }return false;}
+const categoryList = document.querySelector('.home .category-list');
+if (categoryList) {
+    categoryList.addEventListener('wheel', function(e){
+        e.preventDefault();
+        if(e.deltaY >= 0){
+            this.scrollLeft += 20;
+        } else {
+            this.scrollLeft -= 20;
+        }
+    });
+}
