@@ -149,7 +149,7 @@ error_img:
 # A simple 404 page
 error_404:
   enable: true
-  subtitle: 'Page Not Found'
+  subtitle: "Page Not Found"
   background: https://pximg.yumetsuki.moe/img-original/img/2022/04/27/09/50/10/97911234_p0.jpg
 
 post_meta:
@@ -511,7 +511,7 @@ tag_ui: # 留空或 index
 # Website Background (設置網站背景)
 # can set it to color or image (可設置圖片 或者 顔色)
 # The formal of image: url(https://xxxxxx.com/xxx.jpg)
-background: '#f7f9fe'
+background: "#f7f9fe"
 
 # Footer Background
 footer_bg: transparent
@@ -544,7 +544,7 @@ canvas_fluttering_ribbon:
 # https://github.com/hustcc/canvas-nest.js
 canvas_nest:
   enable: false
-  color: '0,0,255' #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
+  color: "0,0,255" #color of lines, default: '0,0,0'; RGB values: (R,G,B).(note: use ',' to separate.)
   opacity: 0.7 # the opacity of line (0~1), default: 0.5.
   zIndex: -1 # z-index property of the background, default: -1.
   count: 99 # the number of lines, default: 99.
@@ -607,7 +607,7 @@ beautify:
 # Don't modify the following settings unless you know how they work (非必要不要修改)
 font:
   global-font-size: 16px
-  code-font-size: 
+  code-font-size:
   font-family: -apple-system, IBM Plex Mono ,monosapce,"微软雅黑", sans-serif
   code-font-family: JetBrains Mono , monospace
 
@@ -710,7 +710,7 @@ busuanzi:
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
   enable: true
-  publish_date: 11/30/2022 12:00:00  
+  publish_date: 11/30/2022 12:00:00
   ##网页开通时间
   #格式: 月/日/年 时间
   #也可以写成 年/月/日 时间
@@ -736,9 +736,9 @@ translate:
   # Time delay
   translateDelay: 0
   # The text of the button when the language is Simplified Chinese
-  msgToTraditionalChinese: '简'
+  msgToTraditionalChinese: "简"
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '繁'
+  msgToSimplifiedChinese: "繁"
 
 # Read Mode (閲讀模式)
 readmode: true
@@ -823,8 +823,8 @@ aplayerInject:
 snackbar:
   enable: true
   position: top-right
-  bg_light: '#49b1f5' # The background color of Toast Notification in light mode
-  bg_dark: '#1f1f1f' # The background color of Toast Notification in dark mode
+  bg_light: "#49b1f5" # The background color of Toast Notification in light mode
+  bg_dark: "#1f1f1f" # The background color of Toast Notification in dark mode
 
 # https://instant.page/
 # prefetch (預加載)
@@ -866,66 +866,66 @@ css_prefix: true
 # # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-  - <script src="https://cdn.smartcis.cn/npm/js-calendar-converter@0.0.6/dist/js-calendar-converter.js"></script>
-  - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/js-heo/mainColor/heoMainColor.css">
-  - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/js-heo/404/404.css">
-  - <link rel="stylesheet" type="text/css" href="/css/404page.css">
-  - <script src="/live2d-widget/autoload.js"></script>
-  - <link rel="stylesheet" href="/css/ariasakablog.css">
-  - <link id="css" rel="stylesheet" href="/css/stylessimple.css">
-  - <link rel="stylesheet" href="/css/iconfont.css">
-  - "<style>#article-container h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 3s linear infinite; -moz-animation: avatar_turn_around 3s linear infinite; -o-animation: avatar_turn_around 3s linear infinite; -ms-animation: avatar_turn_around 3s linear infinite; animation: avatar_turn_around 3s linear infinite; }</style>"
-  - <style id="barragesColor"></style>
-  - <style id="settingStyle"></style>
-  - <style id="yjjs"></style>
-  - <style id="themeColor"></style>
-  - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
-  - <link rel="stylesheet" href="https://cdn.smartcis.cn/npm/butterfly-card-history/css/main.css">
-  - <link rel="stylesheet" href="/css/commentBarrage.css">
-  - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
-  - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/node-snackbar/dist/snackbar.min.css" />
-  - <script src="/swReg.js"></script>
-  - <span id="fps"></span>
-  - <style id="grays"></style>
-  - <script src="https://cdn.smartcis.cn/npm/prefetch-page/dist/prefetch.js"></script>
-  - "<script>addEventListener('DOMContentLoaded', function () {prefetch({ threshold: 25, delay: 3000, limit: 10 ,customs: ['search.xml']})});requestIdleCallback(function () {prefetch({ threshold: 25, delay: 3000, limit: 10,customs: ['search.xml']})})</script>"
+    - <script src="https://cdn.smartcis.cn/npm/js-calendar-converter@0.0.6/dist/js-calendar-converter.js"></script>
+    - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/js-heo/mainColor/heoMainColor.css">
+    - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/js-heo/404/404.css">
+    - <link rel="stylesheet" type="text/css" href="/css/404page.css">
+    - <script src="/live2d-widget/autoload.js"></script>
+    - <link rel="stylesheet" href="/css/ariasakablog.css">
+    - <link id="css" rel="stylesheet" href="/css/stylessimple.css">
+    - <link rel="stylesheet" href="/css/iconfont.css">
+    - "<style>#article-container h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 3s linear infinite; -moz-animation: avatar_turn_around 3s linear infinite; -o-animation: avatar_turn_around 3s linear infinite; -ms-animation: avatar_turn_around 3s linear infinite; animation: avatar_turn_around 3s linear infinite; }</style>"
+    - <style id="barragesColor"></style>
+    - <style id="settingStyle"></style>
+    - <style id="yjjs"></style>
+    - <style id="themeColor"></style>
+    - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+SC">
+    - <link rel="stylesheet" href="https://cdn.smartcis.cn/npm/butterfly-card-history/css/main.css">
+    - <link rel="stylesheet" href="/css/commentBarrage.css">
+    - <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC">
+    - <link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/node-snackbar/dist/snackbar.min.css" />
+    # - <script src="/swReg.js"></script>
+    - <span id="fps"></span>
+    - <style id="grays"></style>
+    - <script src="https://cdn.smartcis.cn/npm/prefetch-page/dist/prefetch.js"></script>
+    - "<script>addEventListener('DOMContentLoaded', function () {prefetch({ threshold: 25, delay: 3000, limit: 10 ,customs: ['search.xml']})});requestIdleCallback(function () {prefetch({ threshold: 25, delay: 3000, limit: 10,customs: ['search.xml']})})</script>"
   bottom:
-  - <script type="text/javascript" src="/js/fixbugpjax.js"></script>
-  - <script src="/js/sakura.js"></script>
-  - <div class="aplayer no-destroy" data-id="7803928554" data-server="netease" data-type="playlist" data-listFolded="false" data-preload="metadata" data-theme="var(--lyx-theme)" data-fixed="true" data-autoplay="false" data-volume=0.1 style="z-index:514"> </div>
-  - <script type="text/javascript" src="/js/aplayersave.js"></script>
-  - <script type="text/javascript" src="/js/noie.js"></script>
-  - <script src="https://cdn.smartcis.cn/npm/winbox/dist/winbox.bundle.min.js"></script>
-  - <script src="https://cdn.smartcis.cn/npm/sweetalert2@8/dist/sweetalert2.all.js"></script>
-  - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
-  - <script type="text/javascript" src="/js/copy.js"></script>
-  - <script type="text/javascript" src="/js/welcome.js"></script>
-  - <script type="text/javascript" src="https://cdn.smartcis.cn/npm/jquery@3.6.4/dist/jquery.min.js"></script>
-  - <script type="text/javascript" src="/js/resizeTop.js"></script>
-  - <script type="text/javascript" src="/js/languages.js"></script>
-  - <script type="text/javascript" src="/js/browser.js"></script>
-  - <script type="text/javascript" src="/js/smooth-scrolling.js"></script>
-  - <script src="https://cdn.smartcis.cn/npm/pace@0.0.4/pace.js"></script>
-  - <script type="text/javascript" src="/js/sitetime.js"></script>
-  - <script data-pjax="" type="text/javascript" src="/js/heimu.js"></script>
-  - <script data-pjax="" src="/js/fps.js"></script>
-  - <script data-pjax="" src="/js/dis.js"></script>
-  - <script data-pjax="" src="/js/settings.js"></script>
-  - <script src="/js/owo.js"></script>
-  - <script src="/js/welcomeconsole.js"></script>
-  - <script src="/js/hide.show.js"></script>
-  - <script data-pace-options='{ "restartOnRequestAfter":false,"eventLag":false}' src="https://cdn.smartcis.cn/npm/pace@0.0.4/pace.js"></script>
-  - <script data-pjax="" src="/js/baiduhistory.js"></script>
-  - <script src="/js/random.js"></script>
-  - <script src="/js/lunar.js"></script>
-  - <script src="/js/day.js"></script>
-  - <script data-pjax="" src="/js/nav.js"></script>
-  - <script src="/js/cursor.js"></script>
-  - <script data-pjax type="text/javascript" src="/js/dianzan.js"></script>
-  - <script type="text/javascript" src="/js/commentsCount.js"></script>
-  - <script type="text/javascript" src="/js/latest.js"></script>
-  - <script data-pjax="" defer src="/js/fixed_card_widget.js"></script>
-  - <script type="text/javascript" src="https://cdn.smartcis.cn/npm/node-snackbar@0/src/js/snackbar.js"></script>
+    - <script type="text/javascript" src="/js/fixbugpjax.js"></script>
+    - <script src="/js/sakura.js"></script>
+    - <div class="aplayer no-destroy" data-id="7803928554" data-server="netease" data-type="playlist" data-listFolded="false" data-preload="metadata" data-theme="var(--lyx-theme)" data-fixed="true" data-autoplay="false" data-volume=0.1 style="z-index:514"> </div>
+    - <script type="text/javascript" src="/js/aplayersave.js"></script>
+    - <script type="text/javascript" src="/js/noie.js"></script>
+    - <script src="https://cdn.smartcis.cn/npm/winbox/dist/winbox.bundle.min.js"></script>
+    - <script src="https://cdn.smartcis.cn/npm/sweetalert2@8/dist/sweetalert2.all.js"></script>
+    - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>
+    - <script type="text/javascript" src="/js/copy.js"></script>
+    - <script type="text/javascript" src="/js/welcome.js"></script>
+    - <script type="text/javascript" src="https://cdn.smartcis.cn/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    - <script type="text/javascript" src="/js/resizeTop.js"></script>
+    - <script type="text/javascript" src="/js/languages.js"></script>
+    - <script type="text/javascript" src="/js/browser.js"></script>
+    - <script type="text/javascript" src="/js/smooth-scrolling.js"></script>
+    - <script src="https://cdn.smartcis.cn/npm/pace@0.0.4/pace.js"></script>
+    - <script type="text/javascript" src="/js/sitetime.js"></script>
+    - <script data-pjax="" type="text/javascript" src="/js/heimu.js"></script>
+    - <script data-pjax="" src="/js/fps.js"></script>
+    - <script data-pjax="" src="/js/dis.js"></script>
+    - <script data-pjax="" src="/js/settings.js"></script>
+    - <script src="/js/owo.js"></script>
+    - <script src="/js/welcomeconsole.js"></script>
+    - <script src="/js/hide.show.js"></script>
+    - <script data-pace-options='{ "restartOnRequestAfter":false,"eventLag":false}' src="https://cdn.smartcis.cn/npm/pace@0.0.4/pace.js"></script>
+    - <script data-pjax="" src="/js/baiduhistory.js"></script>
+    - <script src="/js/random.js"></script>
+    - <script src="/js/lunar.js"></script>
+    - <script src="/js/day.js"></script>
+    - <script data-pjax="" src="/js/nav.js"></script>
+    - <script src="/js/cursor.js"></script>
+    - <script data-pjax type="text/javascript" src="/js/dianzan.js"></script>
+    - <script type="text/javascript" src="/js/commentsCount.js"></script>
+    - <script type="text/javascript" src="/js/latest.js"></script>
+    - <script data-pjax="" defer src="/js/fixed_card_widget.js"></script>
+    - <script type="text/javascript" src="https://cdn.smartcis.cn/npm/node-snackbar@0/src/js/snackbar.js"></script>
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
 #
@@ -1011,8 +1011,8 @@ categoryBar:
     - rgba(112, 235, 12,0.6)
     - rgba(235, 146, 12,0.6)
     - rgba(12, 135, 235,0.6)
-    - '#425aef88'
-    - '#ed709b88'
+    - "#425aef88"
+    - "#ed709b88"
 
 # tag-plugins-plus
 # see https://akilar.top/posts/615e2dec/
@@ -1033,7 +1033,7 @@ tag_plugins:
 #https://akilar.top/posts/451ac5f8/
 fixed_card_widget:
   enable: true
-  page:  #页面显示按钮
+  page: #页面显示按钮
     - type: class #侧栏卡片选择器类型
       name: card-info #侧栏卡片选择器名称
       index: 0 #侧栏卡片选择器序列

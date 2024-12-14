@@ -220,8 +220,7 @@
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "command-palette:打开命令面板": false,
-      "workspaces:管理工作区布局": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "workspaces:管理工作区布局": false
     }
   },
   "active": "13ddd6c331c083fc",
