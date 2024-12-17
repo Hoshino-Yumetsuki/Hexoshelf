@@ -61,9 +61,9 @@ type: "links"
     descr: 专注于技术分享，PHP源码、技术学习、建站教程 、实用软件、软件源码...专注于免费提供最新的源码多方面性质资源分享,免费源码交流学习基地。
   - name: Xc's Blog
     link: https://blog.6ing.top/
-    avatar: https://cdn.jsdelivr.net/gh/mjcfx/picgo/img/qqtou.jpg
+    avatar: https://cdn.smartcis.cn/gh/mjcfx/picgo/img/qqtou.jpg
     descr: 星辰大海
-    siteshot: https://cdn.jsdelivr.net/gh/mjcfx/picgo/img/xc.png
+    siteshot: https://cdn.smartcis.cn/gh/mjcfx/picgo/img/xc.png
   - name: Ariasakaの小窝
     link: https://blog.yaria.top
     avatar: https://bu.dusays.com/2023/06/30/649e9ec88cf47.png
