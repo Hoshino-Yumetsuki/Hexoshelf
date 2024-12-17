@@ -941,8 +941,8 @@ CDN:
   third_party_provider: jsdelivr
   option:
     # main_css: /css/index.css
-    main: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/main.js
-    utils: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/utils.js
+    main: /js/main.js
+    utils: /js/utils.js
     translate: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/tw_cn.js
     local_search: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/search/local-search.js
     algolia_js: https://cdn.smartcis.cn/npm/hexo-theme-butterfly@4.2.2/source/js/search/algolia.js
