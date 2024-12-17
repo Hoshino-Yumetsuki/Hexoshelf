@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-    "build": "hexo generate && esbuild-hexo-minifier",
+    "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
@@ -15,7 +15,6 @@
   "devDependencies": {
     "butterfly-friend": "^3.2.0",
     "editor.md": "^1.5.0",
-    "esbuild-hexo-minifier": "^0.1.7",
     "hexo": "7.0.0",
     "hexo-bilibili-bangumi": "^1.8.9",
     "hexo-butterfly-article-double-row": "^1.0.2",
