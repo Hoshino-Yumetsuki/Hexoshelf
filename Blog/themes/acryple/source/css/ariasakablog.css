@@ -1340,10 +1340,12 @@ hr{
     /*左边框颜色*/
 }
 
-*/ #footer-wrap {
+/*
+#footer-wrap {
     background-color: var(--lyx-0) !important;
 }
 
+*/
 /* .meta::after,meta::before{
     transform:translateX(20px)!important;
 }
