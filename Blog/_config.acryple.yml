@@ -895,7 +895,6 @@ inject:
     - <script src="/js/sakura.js"></script>
     - <div class="aplayer no-destroy" data-id="7803928554" data-server="netease" data-type="playlist" data-listFolded="false" data-preload="metadata" data-theme="var(--lyx-theme)" data-fixed="true" data-autoplay="false" data-volume=0.1 style="z-index:514"> </div>
     - <script type="text/javascript" src="/js/aplayersave.js"></script>
-    - <script type="text/javascript" src="/js/noie.js"></script>
     - <script src="https://cdn.smartcis.cn/npm/winbox/dist/winbox.bundle.min.js"></script>
     - <script src="https://cdn.smartcis.cn/npm/sweetalert2@8/dist/sweetalert2.all.js"></script>
     - <script type="text/javascript" data-pjax="" src="/js/rightmenu.js"></script>

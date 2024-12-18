@@ -1,11 +1,11 @@
 document.addEventListener('pjax:complete', tonav);
 document.addEventListener('DOMContentLoaded', tonav);
-function tonav(){
+function tonav() {
   // 获取需要操作的元素
   const nameContainer = document.getElementById("name-container");
   const menuItems = document.getElementsByClassName("menus_items")[1];
   const pageName = document.getElementById("page-name");
-  
+
   // 检查元素是否存在
   if (!nameContainer || !menuItems || !pageName) {
     console.warn('Some required elements are missing');

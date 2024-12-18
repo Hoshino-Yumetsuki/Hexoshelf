@@ -46,7 +46,7 @@ function _regeneratorRuntime() {
                 if ("throw" === t) throw e;
                 return x()
             }
-            for (i.method = t, i.arg = e;;) {
+            for (i.method = t, i.arg = e; ;) {
                 var r = i.delegate;
                 if (r) {
                     r = function t(e, r) {
@@ -103,11 +103,11 @@ function _regeneratorRuntime() {
     i.wrap = c;
     var l = {};
 
-    function h() {}
+    function h() { }
 
-    function f() {}
+    function f() { }
 
-    function d() {}
+    function d() { }
     var e = {},
         y = (a(e, n, function () {
             return this
@@ -374,7 +374,7 @@ window.addEventListener("load", function () {
             var e = _asyncToGenerator(_regeneratorRuntime().mark(function t(e) {
                 var r, n, o, a;
                 return _regeneratorRuntime().wrap(function (t) {
-                    for (;;) switch (t.prev = t.next) {
+                    for (; ;) switch (t.prev = t.next) {
                         case 0:
                             return r = [], t.next = 3, fetch(e);
                         case 3:
@@ -444,8 +444,8 @@ window.addEventListener("load", function () {
                             c = -1,
                             s = -1;
                         if ("" !== o || "" !== i ? v.forEach(function (t, e) {
-                                r = o.indexOf(t), c = i.indexOf(t), r < 0 && c < 0 ? n = !1 : (c < 0 && (c = 0), 0 === e && (s = c))
-                            }) : n = !1, n) {
+                            r = o.indexOf(t), c = i.indexOf(t), r < 0 && c < 0 ? n = !1 : (c < 0 && (c = 0), 0 === e && (s = c))
+                        }) : n = !1, n) {
                             if (0 <= s) {
                                 var u = s - 30,
                                     l = s + 100,
@@ -453,9 +453,9 @@ window.addEventListener("load", function () {
                                     f = "",
                                     d = (0 === (u = u < 0 ? 0 : u) ? l = 100 : h = "...", l > i.length ? l = i.length : f = "...", i.substring(u, l));
                                 if (v.forEach(function (t) {
-                                        var e = new RegExp(t, "gi");
-                                        d = d.replace(e, '<span class="search-keyword">' + t + "</span>"), o = o.replace(e, '<span class="search-keyword">' + t + "</span>")
-                                    }), g = (g = (g += '<div class="local-search__hit-item">') + (a ? '<div class="search-left"><img src='.concat(a, " alt=").concat(a, " data-fancybox='gallery'>") : '<div class="search-left" style="width:0">')) + "</div>" + (a ? '<div class="search-right"><a href="' + t + '" class="search-result-title">' + o + "</a>" : '<div class="search-right" style="width: 100%"><a href="' + t + '" class="search-result-title">' + o + "</a>"), m += 1, "" !== i && (g += '<p class="search-result" onclick="pjax.loadUrl(`' + t + '`)">' + h + d + f + "</p>"), e.length) {
+                                    var e = new RegExp(t, "gi");
+                                    d = d.replace(e, '<span class="search-keyword">' + t + "</span>"), o = o.replace(e, '<span class="search-keyword">' + t + "</span>")
+                                }), g = (g = (g += '<div class="local-search__hit-item">') + (a ? '<div class="search-left"><img src='.concat(a, " alt=").concat(a, " data-fancybox='gallery'>") : '<div class="search-left" style="width:0">')) + "</div>" + (a ? '<div class="search-right"><a href="' + t + '" class="search-result-title">' + o + "</a>" : '<div class="search-right" style="width: 100%"><a href="' + t + '" class="search-result-title">' + o + "</a>"), m += 1, "" !== i && (g += '<p class="search-result" onclick="pjax.loadUrl(`' + t + '`)">' + h + d + f + "</p>"), e.length) {
                                     g += '<div class="search-result-tags">';
                                     for (var y = 0; y < e.length; y++) {
                                         var p = e[y].trim();

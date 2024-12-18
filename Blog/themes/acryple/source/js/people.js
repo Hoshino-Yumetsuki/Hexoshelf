@@ -44,78 +44,42 @@ function _defineProperties(e, r) {
 function _createClass(e, r, t) {
     return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), e
 }
-var config = {
-        src: "https://cdn.smartcis.cn/npm/guli-heo/others/open-peeps-sheet.png",
-        rows: 15,
-        cols: 7
-    },
-    randomRange = function (e, r) {
-        return e + Math.random() * (r - e)
-    },
-    randomIndex = function (e) {
-        return 0 | randomRange(0, e.length)
-    },
-    removeFromArray = function (e, r) {
-        return e.splice(r, 1)[0]
-    },
-    removeItemFromArray = function (e, r) {
-        return removeFromArray(e, e.indexOf(r))
-    },
-    removeRandomFromArray = function (e) {
-        return removeFromArray(e, randomIndex(e))
-    },
-    getRandomFromArray = function (e) {
-        return e[0 | randomIndex(e)]
-    },
-    resetPeep = function (e) {
-        var r, t, a = e.stage,
-            n = e.peep,
-            o = .5 < Math.random() ? 1 : -1,
-            i = 100 - 250 * gsap.parseEase("power2.in")(Math.random()),
-            s = a.height - n.height + i;
-        return 1 == o ? (r = -n.width, t = a.width, n.scaleX = 1) : (r = a.width + n.width, t = 0, n.scaleX = -1), n.x = r, n.y = s, {
-            startX: r,
-            startY: n.anchorY = s,
-            endX: t
-        }
-    },
-    normalWalk = function (e) {
-        var r = e.peep,
-            t = e.props,
-            a = (t.startX, t.startY),
-            n = t.endX,
-            o = gsap.timeline();
-        return o.timeScale(randomRange(.5, 1.5)), o.to(r, {
-            duration: 10,
-            x: n,
-            ease: "none"
-        }, 0), o.to(r, {
-            duration: .25,
-            repeat: 40,
-            yoyo: !0,
-            y: a - 10
-        }, 0), o
-    },
-    walks = [normalWalk],
-    Peep = function () {
-        function a(e) {
-            var r = e.image,
-                t = e.rect;
-            _classCallCheck(this, a), this.image = r, this.setRect(t), this.x = 0, this.y = 0, this.anchorY = 0, this.scaleX = 1, this.walk = null
-        }
-        return _createClass(a, [{
-            key: "setRect",
-            value: function (e) {
-                this.rect = e, this.width = e[2], this.height = e[3], this.drawArgs = [this.image].concat(_toConsumableArray(e), [0, 0, this.width, this.height])
-            }
-        }, {
-            key: "render",
-            value: function (e) {
-                e.save(), e.translate(this.x, this.y), e.scale(this.scaleX, 1), e.drawImage.apply(e, _toConsumableArray(this.drawArgs)), e.restore()
-            }
-        }]), a
-    }(),
-    img = document.createElement("img");
+
+const config = {
+    src: "https://cdn.smartcis.cn/npm/guli-heo/others/open-peeps-sheet.png",
+    rows: 15,
+    cols: 7,
+    walkSpeed: {min: 0.5, max: 1.5},
+    crowdSize: 'auto',
+    bounceHeight: 10,
+    walkDuration: 10
+};
+
+const utils = {
+    randomRange: (min, max) => min + Math.random() * (max - min),
+    randomFromArray: arr => arr[Math.floor(Math.random() * arr.length)],
+    removeFromArray: (arr, item) => arr.splice(arr.indexOf(item), 1)[0]
+};
+
+class Peep {
+    constructor({image, rect}) {
+        _classCallCheck(this, Peep), this.image = image, this.setRect(rect), this.reset()
+    }
+
+    reset() {
+        this.x = 0, this.y = 0, this.anchorY = 0, this.scaleX = 1, this.walk = null
+    }
+
+    setRect(e) {
+        this.rect = e, this.width = e[2], this.height = e[3], this.drawArgs = [this.image].concat(_toConsumableArray(e), [0, 0, this.width, this.height])
+    }
+
+    render(e) {
+        e.save(), e.translate(this.x, this.y), e.scale(this.scaleX, 1), e.drawImage.apply(e, _toConsumableArray(this.drawArgs)), e.restore()
+    }
+}
+
+var img = document.createElement("img");
 img.onload = init, img.src = config.src;
 var canvas = document.querySelector("#canvas"),
     ctx = canvas.getContext("2d"),
@@ -128,7 +92,7 @@ var canvas = document.querySelector("#canvas"),
     crowd = [];
 
 function init() {
-    createPeeps(), resize(), gsap.ticker.add(render), window.addEventListener("resize", resize)
+    createPeeps(), resize(), render(), initEvents()
 }
 
 function createPeeps() {
@@ -149,7 +113,7 @@ function initCrowd() {
 }
 
 function addPeepToCrowd() {
-    var e = removeRandomFromArray(availablePeeps),
+    var e = utils.removeFromArray(availablePeeps, utils.randomFromArray(availablePeeps)),
         r = getRandomFromArray(walks)({
             peep: e,
             props: resetPeep({
@@ -165,11 +129,28 @@ function addPeepToCrowd() {
 }
 
 function removePeepFromCrowd(e) {
-    removeItemFromArray(crowd, e), availablePeeps.push(e)
+    utils.removeFromArray(crowd, e), availablePeeps.push(e)
 }
 
 function render() {
-    canvas.width = canvas.width, ctx.save(), ctx.scale(devicePixelRatio, devicePixelRatio), crowd.forEach(function (e) {
-        e.render(ctx)
-    }), ctx.restore()
+    requestAnimationFrame(render);
+    if(crowd.length) {
+        canvas.width = canvas.width;
+        ctx.save();
+        ctx.scale(devicePixelRatio, devicePixelRatio);
+        if(crowd.needsSort) {
+            crowd.sort((a, b) => a.anchorY - b.anchorY);
+            crowd.needsSort = false;
+        }
+        crowd.forEach(peep => peep.render(ctx));
+        ctx.restore();
+    }
+}
+
+function initEvents() {
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(resize, 150);
+    });
 }

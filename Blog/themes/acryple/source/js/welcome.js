@@ -1,27 +1,8 @@
-// Service Worker 处理
-const handleServiceWorker = () => {
-    if (!('serviceWorker' in navigator) || !navigator.serviceWorker.controller) return;
-
-    navigator.serviceWorker.controller.postMessage('update');
-    navigator.serviceWorker.addEventListener('message', ({ data }) => {
-        const handlers = {
-            update: () => {
-                // 更新后的操作
-            },
-            refresh: () => {
-                // 强刷缓存后的操作
-            }
-        };
-
-        handlers[data.type]?.() || console.error(`未知事件：${data.type}`);
-    });
-};
-
 // 欢迎提示处理
 const showWelcomeMessage = () => {
     if (localStorage.getItem("popWelcomeWindow") === "0") return;
 
-    const trustedDomains = ['yumetsuki.moe', 'ariasaka.top'];
+    const trustedDomains = ['yumetsuki.moe'];
     const referrerDomain = document.referrer ? new URL(document.referrer).hostname : '';
 
     const message = trustedDomains.some(domain => referrerDomain.includes(domain)) || !referrerDomain

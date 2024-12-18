@@ -39,7 +39,6 @@ skip_render:
   - projects.html
   - linksmessage.html
   - people.html
-  - noie.html
   - config.yaml
   - live2d-widget/**
   - BingSiteAuth.xml
