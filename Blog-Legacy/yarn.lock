@@ -828,7 +828,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-cli@npm:^4.3.0":
+"hexo-cli@npm:^4.3.2":
   version: 4.3.2
   resolution: "hexo-cli@npm:4.3.2"
   dependencies:
@@ -871,7 +871,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo-fs@npm:^4.0.0, hexo-fs@npm:^4.1.1":
+"hexo-fs@npm:^4.0.0, hexo-fs@npm:^4.1.1, hexo-fs@npm:^4.1.3":
   version: 4.1.3
   resolution: "hexo-fs@npm:4.1.3"
   dependencies:
@@ -1039,19 +1039,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hexo@npm:7.0.0":
-  version: 7.0.0
-  resolution: "hexo@npm:7.0.0"
+"hexo@npm:7.3.0":
+  version: 7.3.0
+  resolution: "hexo@npm:7.3.0"
   dependencies:
     abbrev: "npm:^2.0.0"
     archy: "npm:^1.0.0"
     bluebird: "npm:^3.7.2"
-    hexo-cli: "npm:^4.3.0"
+    hexo-cli: "npm:^4.3.2"
     hexo-front-matter: "npm:^4.2.1"
-    hexo-fs: "npm:^4.1.1"
+    hexo-fs: "npm:^4.1.3"
     hexo-i18n: "npm:^2.0.0"
     hexo-log: "npm:^4.0.1"
-    hexo-util: "npm:^3.0.1"
+    hexo-util: "npm:^3.3.0"
     js-yaml: "npm:^4.1.0"
     js-yaml-js-types: "npm:^1.0.0"
     micromatch: "npm:^4.0.4"
@@ -1066,10 +1066,10 @@ __metadata:
     text-table: "npm:^0.2.0"
     tildify: "npm:^2.0.0"
     titlecase: "npm:^1.1.3"
-    warehouse: "npm:^5.0.0"
+    warehouse: "npm:^5.0.1"
   bin:
     hexo: bin/hexo
-  checksum: 10c0/df79ebf5e8d24d56705cf2e1acbb7a0a7dae388e7db0d920591ad5574f8acb821fc51028dc044bbc502ad4c7d5d3c632574e4e6575c03d94279bfadccb4aaf3b
+  checksum: 10c0/db41379b9f10ebd183677a43874dc170b215c8d368a603f594e463fd3fb03d37110958daa66e1f80ba66641c15fe08a8c2fc5a2289c1875e6a47f02645a2e228
   languageName: node
   linkType: hard
 
@@ -1965,7 +1965,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "q78kg-blog-legacy@workspace:."
   dependencies:
-    hexo: "npm:7.0.0"
+    hexo: "npm:7.3.0"
     hexo-deployer-git: "npm:^4.0.0"
     hexo-generator-archive: "npm:^2.0.0"
     hexo-generator-category: "npm:^2.0.0"
@@ -2449,7 +2449,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"warehouse@npm:^5.0.0":
+"warehouse@npm:^5.0.1":
   version: 5.0.1
   resolution: "warehouse@npm:5.0.1"
   dependencies:
