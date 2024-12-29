@@ -1,5 +1,5 @@
 ---
-title: 这可能是首个DiffSinger数据集全自动标注工具——Fast-Phasr-Next
+title: 这可能是首个 DiffSinger 数据集全自动标注工具——Fast-Phasr-Next
 tags:
   - DiffSinger
   - 自动标注
