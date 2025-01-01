@@ -1,56 +1,56 @@
 @font-face {
     font-family: 'Fredoka';
     font-display: swap;
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/Fredoka.woff2') format("woff2");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/Fredoka.woff2') format("woff2");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
 @font-face {
     font-family: 'Monaco';
     font-display: swap;
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/MONACO.TTF') format("truetype");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/MONACO.TTF') format("truetype");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
 @font-face {
     font-family: 'HYTMR';
     font-display: swap;
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/HYTangMeiRen55W.woff2') format("woff2");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/HYTangMeiRen55W.woff2') format("woff2");
     /*/font/HYTangMeiRen55W.woff2*/
 }
 
 @font-face {
     font-family: 'FZXJLJ';
     font-display: swap;
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/FZXiJinLJW.woff2') format("woff2");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/FZXiJinLJW.woff2') format("woff2");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
 @font-face {
     font-family: 'FZXS';
     font-display: swap;
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/FZXiangSu14.woff2') format("woff2");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/FZXiangSu14.woff2') format("woff2");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
 @font-face {
     font-family: 'HYPailou';
     font-display: swap;
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/HanyiSentyPailouArch.woff2') format("woff2");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/HanyiSentyPailouArch.woff2') format("woff2");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
 @font-face {
     font-family: 'FZODZK';
     font-display: swap;
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/FZShouJiOuDieZhengKai.woff2') format("woff2");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/FZShouJiOuDieZhengKai.woff2') format("woff2");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
 @font-face {
     font-family: 'Source Serif';
     font-display: swap;
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/SourceHanSerifSC-Medium.otf') format("opentype");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/SourceHanSerifSC-Medium.otf') format("opentype");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
@@ -58,7 +58,7 @@
     font-family: 'Source Sans';
     font-display: swap;
     /*https://ghproxy.com/https://raw.githubusercontent.com/LYXOfficial/LYXOfficial.github.io/master/font/HYTangMeiRen55W.woff2*/
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/SourceHanSansCN-Medium.otf') format("opentype");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/SourceHanSansCN-Medium.otf') format("opentype");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
@@ -66,7 +66,7 @@
     font-family: 'ZhuZiAWan';
     font-display: swap;
     /*https://ghproxy.com/https://raw.githubusercontent.com/LYXOfficial/LYXOfficial.github.io/master/font/HYTangMeiRen55W.woff2*/
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/ZhuZiAWan.woff2') format("woff2");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/ZhuZiAWan.woff2') format("woff2");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 
@@ -74,7 +74,7 @@
     font-family: 'HYPailou';
     font-display: swap;
     /*https://ghproxy.com/https://raw.githubusercontent.com/LYXOfficial/LYXOfficial.github.io/master/font/HYTangMeiRen55W.woff2*/
-    src: url('https://cdn.smartcis.cn/npm/fontcdn-ariasaka/HanyiSentyPailouArch.woff2') format("woff2");
+    src: url('https://fastly.jsdelivr.net/npm/fontcdn-ariasaka/HanyiSentyPailouArch.woff2') format("woff2");
     /*/font/HYTangMeiRen55W.ttf*/
 }
 

@@ -11,7 +11,7 @@ type: "links"
 </div>
 <div id="random-post"></div>
 
-<link rel="stylesheet" type="text/css" href="https://cdn.smartcis.cn/npm/js-heo/moments/random-friends-post.css">
+<link rel="stylesheet" type="text/css" href="https://fastly.jsdelivr.net/npm/js-heo/moments/random-friends-post.css">
 
 {% flink %}
 
@@ -61,9 +61,9 @@ type: "links"
     descr: 专注于技术分享，PHP源码、技术学习、建站教程 、实用软件、软件源码...专注于免费提供最新的源码多方面性质资源分享,免费源码交流学习基地。
   - name: Xc's Blog
     link: https://blog.6ing.top/
-    avatar: https://cdn.smartcis.cn/gh/mjcfx/picgo/img/qqtou.jpg
+    avatar: https://fastly.jsdelivr.net/gh/mjcfx/picgo/img/qqtou.jpg
     descr: 星辰大海
-    siteshot: https://cdn.smartcis.cn/gh/mjcfx/picgo/img/xc.png
+    siteshot: https://fastly.jsdelivr.net/gh/mjcfx/picgo/img/xc.png
   - name: Ariasakaの小窝
     link: https://blog.yaria.top
     avatar: https://bu.dusays.com/2023/06/30/649e9ec88cf47.png
@@ -199,7 +199,7 @@ type: "links"
 
 点下面的按钮！
 
-<script type="text/javascript" src="https://cdn.smartcis.cn/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://fastly.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
 <script src = "/js/randomFriend.js"></script>
 
 <a href="javascript:void(0)" onclick="addflink()">快速添加友链</a>

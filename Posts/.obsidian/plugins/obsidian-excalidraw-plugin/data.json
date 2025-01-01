@@ -787,5 +787,5 @@
   ],
   "showSplashscreen": true,
   "autosaveInterval": 15000,
-  "mathjaxSourceURL": "https://cdn.smartcis.cn/npm/mathjax@3.2.1/es5/tex-svg.js"
+  "mathjaxSourceURL": "https://fastly.jsdelivr.net/npm/mathjax@3.2.1/es5/tex-svg.js"
 }
