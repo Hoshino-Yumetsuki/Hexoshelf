@@ -1,4 +1,3 @@
-
 console.log(
     "Codes uses GPL Licence"
 )
@@ -284,17 +283,25 @@ function popupMenu() {
         window.onscroll = () => {
             rmf.showRightMenu(false);
             window.onscroll = () => { }
-            document.body.removeChild(mask);
+            if (mask && mask.parentNode === document.body) {
+                document.body.removeChild(mask);
+            }
         }
         $(".rightMenu-item").click(() => {
-            document.body.removeChild(mask);
+            if (mask && mask.parentNode === document.body) {
+                document.body.removeChild(mask);
+            }
         })
         $(window).resize(() => {
             rmf.showRightMenu(false);
-            document.body.removeChild(mask);
+            if (mask && mask.parentNode === document.body) {
+                document.body.removeChild(mask);
+            }
         })
         mask.onclick = () => {
-            document.body.removeChild(mask);
+            if (mask && mask.parentNode === document.body) {
+                document.body.removeChild(mask);
+            }
         }
         rmf.showRightMenu(true, pageY, pageX);
         return false;

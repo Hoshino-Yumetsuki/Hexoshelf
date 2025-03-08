@@ -48,6 +48,7 @@ function startbarrage() {
 		}
 	}
 	function isInViewPortOfOne(el) {
+		if (!el) return false;
 		const viewPortHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
 		const offsetTop = el.offsetTop
 		const scrollTop = document.documentElement.scrollTop
@@ -57,13 +58,17 @@ function startbarrage() {
 	if (location.href.indexOf("posts") != -1 || location.href.indexOf("posts") != -1)
 		document.onscroll = function () {
 			if (commentBarrageConfig.displayBarrage) {
-				if (isInViewPortOfOne(document.getElementById("post-comment"))) {
+				const commentElement = document.getElementById("post-comment");
+				if (commentElement && isInViewPortOfOne(commentElement)) {
 					document.getElementsByClassName("barrageswiper")[0].style.transform = "translateX(514px)";
 					document.getElementsByClassName("barrageswiper")[0].style.opacity = "0";
 				}
 				else {
-					document.getElementsByClassName("barrageswiper")[0].style.transform = "";
-					document.getElementsByClassName("barrageswiper")[0].style.opacity = "1";
+					const barrageSwiperElements = document.getElementsByClassName("barrageswiper");
+					if (barrageSwiperElements.length > 0) {
+						barrageSwiperElements[0].style.transform = "";
+						barrageSwiperElements[0].style.opacity = "1";
+					}
 				}
 			}
 		}
